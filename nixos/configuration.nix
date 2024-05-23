@@ -24,6 +24,7 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
+    outputs.nixosModules.bluetooth
     # ./nix-alien.nix
   ];
 
@@ -88,9 +89,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
 
   # Set your time zone.
   time.timeZone = "Europe/Paris";
