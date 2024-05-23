@@ -2,7 +2,12 @@
 
 {
   # Enable Hyprland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    # Install the packages from nixpkgs
+    enable = true;
+    # Whether to enable XWayland
+    xwayland.enable = true;
+  };
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   environment.sessionVariables.WLR_NO_HARDWARE_CURSORS = "1";
 
@@ -14,6 +19,6 @@
     unstable.hypridle
 
     imv
-    wezterm
+    kitty
   ];
 }
