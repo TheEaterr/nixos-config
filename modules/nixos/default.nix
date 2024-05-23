@@ -3,4 +3,16 @@
 {
   # List your module files here
   bluetooth = import ./bluetooth.nix;
+  bootLoader = import ./boot-loader.nix;
+  displayManager = import ./display-manager.nix;
+  fonts = import ./fonts.nix;
+  gc = import ./gc.nix;
+  hyprland = import ./hyprland.nix;
+  i18n = import ./i18n.nix;
+  nixLd = import ./nix-ld.nix;
+  packages = import ./packages.nix;
+  printing = import ./printing.nix;
+  services = import ./services.nix;
+  sound = import ./sound.nix;
+  users = import ./users.nix;
 }
