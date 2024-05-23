@@ -36,6 +36,7 @@
     outputs.nixosModules.printing
     outputs.nixosModules.services
     outputs.nixosModules.sound
+    outputs.nixosModules.theme
     outputs.nixosModules.users
   ];
 

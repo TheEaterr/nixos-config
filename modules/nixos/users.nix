@@ -9,6 +9,7 @@
     extraGroups = [ "networkmanager" "input" "wheel" "video" "audio" "tss" ];
     packages = with pkgs; [
       discord
+      vlc
     ];
   };
 }

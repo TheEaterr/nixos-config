@@ -7,4 +7,5 @@
   services.dbus.enable = true;
   services.tumbler.enable = true; 
   services.fwupd.enable = true;
+  programs.light.enable = true;
 }

@@ -14,5 +14,6 @@
   printing = import ./printing.nix;
   services = import ./services.nix;
   sound = import ./sound.nix;
+  theme = import ./theme.nix;
   users = import ./users.nix;
 }

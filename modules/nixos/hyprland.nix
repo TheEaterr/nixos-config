@@ -14,6 +14,6 @@
     hypridle
 
     imv
-    # TODO install vlc
+    wezterm
   ];
 }
