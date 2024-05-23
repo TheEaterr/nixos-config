@@ -25,8 +25,8 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
     outputs.nixosModules.bluetooth
-    outputs.nixosModules.boot-loader
-    outputs.nixosModules.display-manager
+    outputs.nixosModules.bootLoader
+    outputs.nixosModules.displayManager
     outputs.nixosModules.fonts
     outputs.nixosModules.gc
     outputs.nixosModules.hyprland

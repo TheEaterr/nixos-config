@@ -9,9 +9,9 @@
   environment.systemPackages = with pkgs; [
     pyprland
     hyprpicker
-    hyprcursor
-    hyprlock
-    hypridle
+    unstable.hyprcursor
+    unstable.hyprlock
+    unstable.hypridle
 
     imv
     wezterm
