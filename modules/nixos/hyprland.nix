@@ -20,5 +20,6 @@
 
     imv
     kitty
+    avizo
   ];
 }
