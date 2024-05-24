@@ -32,5 +32,6 @@
     ripgrep
     jq
     cmatrix
+    networkmanagerapplet
   ];
 }
