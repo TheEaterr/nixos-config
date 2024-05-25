@@ -33,5 +33,6 @@
     jq
     cmatrix
     networkmanagerapplet
+    wev
   ];
 }

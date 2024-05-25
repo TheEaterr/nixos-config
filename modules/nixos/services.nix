@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services.upower.enable = true;
@@ -8,4 +8,20 @@
   services.tumbler.enable = true; 
   services.fwupd.enable = true;
   programs.light.enable = true;
+  services.geoclue2.enable = true;
+  programs.thunar.enable = true;
+  
+  services.geoclue2.appConfig = {
+      "gammastep" = {
+        isAllowed = true;
+        isSystem = false;
+        users = [ "1000" ];
+      };
+  };
+  
+  environment.systemPackages = with pkgs; [
+    # wlsunset
+    gammastep
+    brightnessctl
+  ];
 }
