@@ -36,5 +36,9 @@
     wev
     btop
     vim
+    signal-desktop
+    whatsapp-for-linux
+    telegram-desktop
+    nextcloud-client
   ];
 }

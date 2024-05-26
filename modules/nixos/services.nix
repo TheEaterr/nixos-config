@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  services.flatpak.enable = true;
   services.upower.enable = true;
   programs.fish.enable = true;
   programs.dconf.enable = true;
