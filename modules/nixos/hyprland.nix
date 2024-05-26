@@ -22,5 +22,7 @@
     imv
     kitty
     avizo
+    unstable.wlr-layout-ui
+    wlr-randr
   ];
 }
