@@ -40,5 +40,6 @@
     whatsapp-for-linux
     telegram-desktop
     nextcloud-client
+    lsd
   ];
 }
