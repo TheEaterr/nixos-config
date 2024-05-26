@@ -11,7 +11,11 @@
   programs.light.enable = true;
   services.geoclue2.enable = true;
   programs.thunar.enable = true;
-  
+
+  # so nextcloud stays connected
+  services.gnome.gnome-keyring.enable=true;
+  programs.seahorse.enable = true;
+
   services.geoclue2.appConfig = {
       "gammastep" = {
         isAllowed = true;
