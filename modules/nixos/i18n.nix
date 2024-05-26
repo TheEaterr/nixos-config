@@ -27,4 +27,6 @@
 
   # Configure console keymap
   console.keyMap = "fr";
+  # Necessary so the keymap is applied for luks passphrase prompt
+  console.earlySetup = true;
 }
