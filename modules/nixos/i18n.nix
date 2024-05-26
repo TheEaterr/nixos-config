@@ -22,7 +22,7 @@
   # Configure keymap in X11
   services.xserver = {
     layout = "fr";
-    xkbVariant = "oss_nodeadkeys";
+    xkbVariant = "oss";
   };
 
   # Configure console keymap
