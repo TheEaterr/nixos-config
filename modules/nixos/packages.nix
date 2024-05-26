@@ -34,5 +34,7 @@
     cmatrix
     networkmanagerapplet
     wev
+    btop
+    vim
   ];
 }
