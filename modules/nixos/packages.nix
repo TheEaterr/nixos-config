@@ -41,5 +41,6 @@
     telegram-desktop
     nextcloud-client
     lsd
+    wireshark-qt
   ];
 }
