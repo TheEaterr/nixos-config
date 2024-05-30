@@ -42,5 +42,6 @@
     nextcloud-client
     lsd
     wireshark-qt
+    krita
   ];
 }
