@@ -62,7 +62,12 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ"; 
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.quintom-cursor-theme;
+    name = "Quintom_Snow";
+    size = 24;
+  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.11";
