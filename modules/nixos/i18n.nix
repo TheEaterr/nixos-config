@@ -24,6 +24,10 @@
     layout = "fr";
     xkbVariant = "oss";
   };
+  # services.xserver.xkb = {
+  #   layout = "fr";
+  #   variant = "oss";
+  # };
 
   # Configure console keymap
   console.keyMap = "fr";

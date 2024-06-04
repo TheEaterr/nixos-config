@@ -36,7 +36,7 @@
     wev
     btop
     vim
-    signal-desktop
+    unstable.signal-desktop
     whatsapp-for-linux
     telegram-desktop
     nextcloud-client
