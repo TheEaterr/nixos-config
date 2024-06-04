@@ -43,5 +43,6 @@
     lsd
     wireshark-qt
     krita
+    zoom-us
   ];
 }
