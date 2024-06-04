@@ -20,14 +20,10 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "fr";
-    xkbVariant = "oss";
+    variant = "oss";
   };
-  # services.xserver.xkb = {
-  #   layout = "fr";
-  #   variant = "oss";
-  # };
 
   # Configure console keymap
   console.keyMap = "fr";
