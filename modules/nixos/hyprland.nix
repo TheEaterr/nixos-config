@@ -19,7 +19,7 @@
   environment.systemPackages = with pkgs; [
     pyprland
     hyprpicker
-    unstable.hyprcursor
+    hyprcursor
     unstable.hyprlock
     unstable.hypridle
     unstable.hyprpaper

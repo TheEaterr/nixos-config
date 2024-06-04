@@ -63,10 +63,10 @@
   systemd.user.startServices = "sd-switch";
 
   home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.quintom-cursor-theme;
-    name = "Quintom_Snow";
+    name = "phinger-cursors-light";
+    package = pkgs.phinger-cursors;
     size = 24;
+    gtk.enable = true;
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
