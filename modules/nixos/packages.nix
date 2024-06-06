@@ -44,5 +44,7 @@
     wireshark-qt
     krita
     zoom-us
+    python3
+    inkscape
   ];
 }
