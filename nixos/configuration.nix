@@ -90,6 +90,7 @@
       # Import your home-manager configuration
       eaterr = import ../home-manager/home.nix;
     };
+    backupFileExtension = "backup";
   };
 
   boot.kernelPackages = pkgs.linuxPackages_latest; 

@@ -69,6 +69,18 @@
     gtk.enable = true;
   };
 
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Graphite-Dark";
+      package = pkgs.graphite-gtk-theme;
+    };
+    iconTheme = {
+      name = "Tela-circle-icon-theme";
+      package = pkgs.tela-circle-icon-theme;
+    };
+  };
+
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.11";
 }
