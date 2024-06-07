@@ -78,8 +78,10 @@
       };
     };
     iconTheme = {
-      name = "Tela-circle-icon-theme";
-      package = pkgs.tela-circle-icon-theme;
+      name = "Tela-circle-orange-dark";
+      package = pkgs.tela-circle-icon-theme.override {
+        colorVariants = ["orange"];
+      };
     };
   };
 
