@@ -72,8 +72,10 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Graphite-Dark";
-      package = pkgs.graphite-gtk-theme;
+      name = "Graphite-orange-Dark";
+      package = pkgs.graphite-gtk-theme.override {
+        themeVariants = ["orange"];
+      };
     };
     iconTheme = {
       name = "Tela-circle-icon-theme";
