@@ -8,23 +8,23 @@
   colorScheme = {
     slug = "dark";
     palette = {
-        base00 = "0C0C0C"; # Black
-        base01 = "2C2C2C";
-        base02 = "4C4C4C";
-        base03 = "7C7C7C";
-        base04 = "9C9C9C";
-        base05 = "BCBCBC";
-        base06 = "ECECEC";
-        base07 = "FCFCFC"; # White
-        base08 = "ff4136"; # Red
-        base09 = "fb8c00"; # Orange
-        base0A = "ffdc00"; # Yellow
-        base0B = "2ecc40"; # Green
-        base0C = "7fdbff"; # Aqua
-        base0D = "0074d9"; # Blue
-        base0E = "b10dc9"; # Purple
-        base0F = "85144b"; # Maroon
-      };
+      base00 = "0C0C0C"; # Black
+      base01 = "2C2C2C";
+      base02 = "4C4C4C";
+      base03 = "7C7C7C";
+      base04 = "9C9C9C";
+      base05 = "BCBCBC";
+      base06 = "ECECEC";
+      base07 = "FCFCFC"; # White
+      base08 = "ff4136"; # Red
+      base09 = "fb8c00"; # Orange
+      base0A = "ffdc00"; # Yellow
+      base0B = "2ecc40"; # Green
+      base0C = "7fdbff"; # Aqua
+      base0D = "0074d9"; # Blue
+      base0E = "b10dc9"; # Purple
+      base0F = "85144b"; # Maroon
+    };
   };
 
   home.packages = with pkgs; [
