@@ -55,7 +55,7 @@ general {
     gaps_in = 2.5
     gaps_out = 5
     border_size = 2
-    col.active_border = rgb(FB8C00)
+    col.active_border = rgb(${config.colorScheme.palette.base09})
 
     layout = dwindle
 }
@@ -177,8 +177,7 @@ bind = $mainMod ALT, L, exec, hyprlock
 bind = $mainMod SHIFT, S, exec, fish -c screenshot_to_clipboard
 bind = $mainMod, E, exec, fish -c screenshot_edit
 bind = $mainMod ALT, R, exec, fish -c record_screen_mp4
-bind = $mainMod, V, exec, fish -c clipboard_to_type
-bind = $mainMod SHIFT, V, exec, fish -c clipboard_to_wlcopy
+bind = $mainMod, V, exec, fish -c clipboard_to_wlcopy
 bind = $mainMod, X, exec, fish -c clipboard_delete_item
 bind = $mainMod SHIFT, X, exec, fish -c clipboard_clear
 bind = $mainMod, U, exec, fish -c bookmark_to_type
