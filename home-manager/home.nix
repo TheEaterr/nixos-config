@@ -11,13 +11,14 @@
   # You can import other home-manager modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
-    # outputs.homeManagerModules.example
+    outputs.homeManagerModules.theme
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    inputs.nix-colors.homeManagerModules.default
   ];
 
   nixpkgs = {
@@ -50,7 +51,6 @@
     homeDirectory = "/home/eaterr";
   };
 
-
   # Add stuff for your user as you see fit:
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
@@ -61,29 +61,6 @@
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
-
-  home.pointerCursor = {
-    name = "phinger-cursors-light";
-    package = pkgs.phinger-cursors;
-    size = 24;
-    gtk.enable = true;
-  };
-
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Graphite-orange-Dark";
-      package = pkgs.graphite-gtk-theme.override {
-        themeVariants = ["orange"];
-      };
-    };
-    iconTheme = {
-      name = "Tela-circle-orange-dark";
-      package = pkgs.tela-circle-icon-theme.override {
-        colorVariants = ["orange"];
-      };
-    };
-  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.11";
