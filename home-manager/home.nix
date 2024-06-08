@@ -16,6 +16,7 @@
     outputs.homeManagerModules.hyprland
     outputs.homeManagerModules.rofi
     outputs.homeManagerModules.dunst
+    outputs.homeManagerModules.wlogout
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default

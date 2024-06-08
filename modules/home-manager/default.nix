@@ -7,4 +7,5 @@
   hyprland = import ./hyprland.nix;
   rofi = import ./rofi.nix;
   dunst = import ./dunst.nix;
+  wlogout = import ./wlogout.nix;
 }
