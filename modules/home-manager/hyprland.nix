@@ -104,6 +104,7 @@
         initial_workspace_tracking = 0
         enable_swallow = true
         swallow_regex = ^(kitty)$
+        focus_on_activate = true
     }
 
     binds {
