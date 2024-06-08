@@ -8,23 +8,23 @@
   colorScheme = {
     slug = "dark";
     palette = {
-      base00 = "eeeeee"; # White
-      base02 = "ACACAC";
-      base03 = "9C9C9C";
-      base04 = "7C7C7C";
-      base05 = "5C5C5C";
-      base01 = "CCCCCC";
-      base06 = "3C3C3C";
-      base07 = "1C1C1C"; # Black
-      base08 = "ff4136"; # Red
-      base09 = "fb8c00"; # Orange
-      base0A = "ffdc00"; # Yellow
-      base0B = "2ecc40"; # Green
-      base0C = "7fdbff"; # Aqua
-      base0D = "0074d9"; # Blue
-      base0E = "b10dc9"; # Purple
-      base0F = "85144b"; # Maroon
-    };
+        base00 = "0C0C0C"; # Black
+        base01 = "2C2C2C";
+        base02 = "4C4C4C";
+        base03 = "7C7C7C";
+        base04 = "9C9C9C";
+        base05 = "BCBCBC";
+        base06 = "ECECEC";
+        base07 = "FCFCFC"; # White
+        base08 = "ff4136"; # Red
+        base09 = "fb8c00"; # Orange
+        base0A = "ffdc00"; # Yellow
+        base0B = "2ecc40"; # Green
+        base0C = "7fdbff"; # Aqua
+        base0D = "0074d9"; # Blue
+        base0E = "b10dc9"; # Purple
+        base0F = "85144b"; # Maroon
+      };
   };
 
   home.packages = with pkgs; [
@@ -41,20 +41,20 @@
     colorScheme = lib.mkForce {
       slug = "light";
       palette = {
-        base00 = "1C1C1C"; # Black
-        base01 = "3C3C3C";
-        base02 = "5C5C5C";
+        base00 = "FCFCFC";
+        base01 = "ECECEC";
+        base02 = "9C9C9C";
         base03 = "7C7C7C";
-        base04 = "9C9C9C";
-        base05 = "ACACAC";
-        base06 = "CCCCCC";
-        base07 = "eeeeee"; # White
+        base04 = "5C5C5C";
+        base05 = "4C4C4C";
+        base06 = "2C2C2C";
+        base07 = "0C0C0C"; # Black
         base08 = "ff4136"; # Red
         base09 = "fb8c00"; # Orange
-        base0A = "ffdc00"; # Yellow
-        base0B = "2ecc40"; # Green
-        base0C = "7fdbff"; # Aqua
-        base0D = "0074d9"; # Blue
+        base0A = "d1ab00"; # Yellow
+        base0B = "307a01"; # Green
+        base0C = "01747a"; # Aqua
+        base0D = "0b017a"; # Blue
         base0E = "b10dc9"; # Purple
         base0F = "85144b"; # Maroon
       };

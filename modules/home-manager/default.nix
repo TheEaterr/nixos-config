@@ -3,4 +3,5 @@
 {
   # List your module files here
   theme = import ./theme.nix;
+  waybar = import ./waybar.nix;
 }
