@@ -14,6 +14,7 @@
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.waybar
     outputs.homeManagerModules.hyprland
+    outputs.homeManagerModules.rofi
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default

@@ -5,4 +5,5 @@
   theme = import ./theme.nix;
   waybar = import ./waybar.nix;
   hyprland = import ./hyprland.nix;
+  rofi = import ./rofi.nix;
 }
