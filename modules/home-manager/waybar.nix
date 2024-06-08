@@ -9,7 +9,7 @@
       spacing = 4; # Gaps between modules (4px)
       modules-left = ["cpu#clickable" "memory#clickable" "disk#clickable" "temperature" "custom/dot" "battery" "custom/dot" "backlight" "pulseaudio#clickable" "systemd-failed-units" "hyprland/submap"];
       modules-center = ["clock"];
-      modules-right = ["hyprland/workspaces" "custom/dot" "tray" "custom/dot" "privacy" "custom/recording" "custom/geo" "custom/media#clickable" "custom/dunst#clickable" "custom/night_mode#clickable" "custom/airplane_mode#clickable" "hyprland/language#clickable" "idle_inhibitor#clickable" "custom/toggle_theme#clickable" "custom/dot" "custom/logout_menu#clickable"];
+      modules-right = ["hyprland/workspaces" "custom/dot" "tray" "custom/dot" "privacy" "custom/recording" "custom/geo" "custom/media#clickable" "custom/dunst#clickable" "custom/night_mode#clickable" "custom/airplane_mode#clickable" "hyprland/language#clickable" "idle_inhibitor#clickable" "custom/toggle_theme#clickable" "power-profiles-daemon#clickable" "custom/dot" "custom/logout_menu#clickable"];
 
       "hyprland/language#clickable" = {
         format-en = "US";
@@ -160,6 +160,18 @@
           .${config.colorScheme.slug};
         interval = "once";
         on-click = "toggle-theme";
+      };
+
+      "power-profiles-daemon#clickable" = {
+        format = "{icon}";
+        tooltip-format = "Power profile: {profile}";
+        tooltip = true;
+        format-icons = {
+          default = "";
+          performance = "";
+          balanced = "";
+          power-saver = "";
+        };
       };
 
       "cpu#clickable" = {
