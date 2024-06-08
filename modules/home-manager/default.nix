@@ -6,4 +6,5 @@
   waybar = import ./waybar.nix;
   hyprland = import ./hyprland.nix;
   rofi = import ./rofi.nix;
+  dunst = import ./dunst.nix;
 }
