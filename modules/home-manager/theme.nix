@@ -1,4 +1,9 @@
-{pkgs}: {
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}: {
   # Toggle scheme between light and dark, taken from https://discourse.nixos.org/t/home-manager-toggle-between-themes/32907
   colorScheme = {
     slug = "dark";
