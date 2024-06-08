@@ -51,7 +51,7 @@
         base07 = "0C0C0C"; # Black
         base08 = "ff4136"; # Red
         base09 = "fb8c00"; # Orange
-        base0A = "d1ab00"; # Yellow
+        base0A = "826601"; # Yellow
         base0B = "307a01"; # Green
         base0C = "01747a"; # Aqua
         base0D = "0b017a"; # Blue
