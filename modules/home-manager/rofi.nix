@@ -22,25 +22,25 @@
 
   home.file.".config/rofi/theme.rofi".text = ''
     * {
-        red:                         #${config.colorScheme.palette.base08};
-        selected-active-foreground:  #${config.colorScheme.palette.base07};
+        red:                         #${config.scheme.base08};
+        selected-active-foreground:  #${config.scheme.base07};
         separatorcolor:              transparent;
         urgent-foreground:           rgba ( 204, 102, 102, 100 % );
         background-color:            transparent;
-        border-color:                #${config.colorScheme.palette.base09};
+        border-color:                #${config.scheme.base09};
         normal-background:           var(background);
         selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
         spacing:                     2;
-        blue:                        #${config.colorScheme.palette.base0D};
+        blue:                        #${config.scheme.base0D};
         urgent-background:           var(background);
-        selected-normal-foreground:  #${config.colorScheme.palette.base07};
-        active-foreground:           #${config.colorScheme.palette.base09};
-        background:                  #${config.colorScheme.palette.base01}ee;
-        selected-normal-background:  #${config.colorScheme.palette.base09};
-        selected-active-background:  #${config.colorScheme.palette.base09};
-        active-background:           #${config.colorScheme.palette.base01}ee;
-        foreground:                  #${config.colorScheme.palette.base06};
-        selected-urgent-foreground:  #${config.colorScheme.palette.base07};
+        selected-normal-foreground:  #${config.scheme.base07};
+        active-foreground:           #${config.scheme.base09};
+        background:                  #${config.scheme.base01}ee;
+        selected-normal-background:  #${config.scheme.base09};
+        selected-active-background:  #${config.scheme.base09};
+        active-background:           #${config.scheme.base01}ee;
+        foreground:                  #${config.scheme.base06};
+        selected-urgent-foreground:  #${config.scheme.base07};
         normal-foreground:           var(foreground);
     }
     window {

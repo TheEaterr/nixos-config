@@ -5,26 +5,26 @@
   ...
 }: {
   # Toggle scheme between light and dark, taken from https://discourse.nixos.org/t/home-manager-toggle-between-themes/32907
-  colorScheme = {
+  scheme = {
     slug = "dark";
-    palette = {
-      base00 = "0C0C0C"; # Black
-      base01 = "2C2C2C";
-      base02 = "4C4C4C";
-      base03 = "7C7C7C";
-      base04 = "9C9C9C";
-      base05 = "BCBCBC";
-      base06 = "ECECEC";
-      base07 = "FCFCFC"; # White
-      base08 = "ff4136"; # Red
-      base09 = "fb8c00"; # Orange
-      base0A = "ffdc00"; # Yellow
-      base0B = "2ecc40"; # Green
-      base0C = "7fdbff"; # Aqua
-      base0D = "0074d9"; # Blue
-      base0E = "b10dc9"; # Purple
-      base0F = "85144b"; # Maroon
-    };
+    scheme = "Graphite orange dark theme";
+    author = "Eaterr";
+    base00 = "0C0C0C"; # Black
+    base01 = "2C2C2C";
+    base02 = "4C4C4C";
+    base03 = "7C7C7C";
+    base04 = "9C9C9C";
+    base05 = "BCBCBC";
+    base06 = "ECECEC";
+    base07 = "FCFCFC"; # White
+    base08 = "ff4136"; # Red
+    base09 = "fb8c00"; # Orange
+    base0A = "ffdc00"; # Yellow
+    base0B = "2ecc40"; # Green
+    base0C = "7fdbff"; # Aqua
+    base0D = "0074d9"; # Blue
+    base0E = "b10dc9"; # Purple
+    base0F = "85144b"; # Maroon
   };
 
   home.packages = with pkgs; [
@@ -38,26 +38,26 @@
   ];
 
   specialisation.light.configuration = {
-    colorScheme = lib.mkForce {
+    scheme = lib.mkForce {
       slug = "light";
-      palette = {
-        base00 = "FCFCFC";
-        base01 = "ECECEC";
-        base02 = "9C9C9C";
-        base03 = "7C7C7C";
-        base04 = "5C5C5C";
-        base05 = "4C4C4C";
-        base06 = "2C2C2C";
-        base07 = "0C0C0C"; # Black
-        base08 = "ff4136"; # Red
-        base09 = "fb8c00"; # Orange
-        base0A = "826601"; # Yellow
-        base0B = "307a01"; # Green
-        base0C = "01747a"; # Aqua
-        base0D = "0b017a"; # Blue
-        base0E = "b10dc9"; # Purple
-        base0F = "85144b"; # Maroon
-      };
+      scheme = "Graphite orange light theme";
+      author = "Eaterr";
+      base00 = "FCFCFC";
+      base01 = "ECECEC";
+      base02 = "9C9C9C";
+      base03 = "7C7C7C";
+      base04 = "5C5C5C";
+      base05 = "4C4C4C";
+      base06 = "2C2C2C";
+      base07 = "0C0C0C"; # Black
+      base08 = "ff4136"; # Red
+      base09 = "fb8c00"; # Orange
+      base0A = "826601"; # Yellow
+      base0B = "307a01"; # Green
+      base0C = "01747a"; # Aqua
+      base0D = "0b017a"; # Blue
+      base0E = "b10dc9"; # Purple
+      base0F = "85144b"; # Maroon
     };
     home.packages = with pkgs; [
       # note the hiPrio which makes this script more important then others and is usually used in nix to resolve name conflicts
@@ -97,7 +97,7 @@
           };
         };
       }
-      .${config.colorScheme.slug};
+      .${config.scheme.slug};
     iconTheme =
       {
         light = {
@@ -113,6 +113,6 @@
           };
         };
       }
-      .${config.colorScheme.slug};
+      .${config.scheme.slug};
   };
 }

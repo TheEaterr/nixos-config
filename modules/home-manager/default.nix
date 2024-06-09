@@ -9,4 +9,5 @@
   dunst = import ./dunst.nix;
   wlogout = import ./wlogout.nix;
   avizo = import ./avizo.nix;
+  kitty = import ./kitty.nix;
 }

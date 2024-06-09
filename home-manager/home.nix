@@ -18,13 +18,14 @@
     outputs.homeManagerModules.dunst
     outputs.homeManagerModules.wlogout
     outputs.homeManagerModules.avizo
+    outputs.homeManagerModules.kitty
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    inputs.nix-colors.homeManagerModules.default
+    inputs.base16.homeManagerModule
   ];
 
   nixpkgs = {

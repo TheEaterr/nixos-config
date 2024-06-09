@@ -14,7 +14,9 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    nix-colors.url = "github:misterio77/nix-colors";
+
+    # Base16 theming
+    base16.url = "github:SenchoPens/base16.nix";
   };
 
   outputs = {

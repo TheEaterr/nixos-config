@@ -10,10 +10,10 @@
 
     button {
       margin: 8px;
-      color: #${config.colorScheme.palette.base07};
+      color: #${config.scheme.base07};
       font-size: 16px;
       font-weight: bold;
-      background-color: #${config.colorScheme.palette.base01};
+      background-color: #${config.scheme.base01};
       background-repeat: no-repeat;
       background-position: center;
       background-size: 25%;
@@ -26,7 +26,7 @@
     button:active,
     button:focus,
     button:hover {
-      border: solid 5px #${config.colorScheme.palette.base09};
+      border: solid 5px #${config.scheme.base09};
       outline-style: none;
     }
 
