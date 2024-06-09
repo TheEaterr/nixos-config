@@ -18,9 +18,11 @@
 
     # Execute your favorite apps at launch
     exec-once = fish -c autostart
+    # Restore previous brightness setting
+    exec-once=light -I
     exec-once=nm-applet --indicator
     exec-once=blueman-applet
-    exec-once=hyprpaper
+    # exec-once=hyprpaper
     exec-once=sleep 2 && nextcloud --background
     exec-once=signal-desktop --start-in-tray
     exec-once=hyprctl setcursor phinger-cursors-light-hypr 25
@@ -208,8 +210,9 @@
     bind = , XF86AudioMute, exec, volumectl toggle-mute
     bind = , XF86AudioMicMute, exec, volumectl -m toggle-mute
 
-    bind = , XF86MonBrightnessUp, exec, lightctl up
-    bind = , XF86MonBrightnessDown, exec, lightctl down
+    # Change and save brightness setting
+    bind = , XF86MonBrightnessUp, exec, lightctl up && light -O
+    bind = , XF86MonBrightnessDown, exec, lightctl down && light -O
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, h, movefocus, l
