@@ -1,4 +1,15 @@
-{config, ...}: {
+{config, ...}: let
+  avizoFlag =
+    {
+      light = "";
+      dark = "-d";
+    }
+    .${
+      config
+      .colorScheme
+      .slug
+    };
+in {
   wayland.windowManager.hyprland.enable = true;
 
   wayland.windowManager.hyprland.extraConfig = ''
@@ -205,14 +216,15 @@
     bind = , XF86AudioNext, exec, playerctl next
     bind = , XF86AudioPrev, exec, playerctl previous
 
-    bind = , XF86AudioRaiseVolume, exec, volumectl -u up
-    bind = , XF86AudioLowerVolume, exec, volumectl -u down
+    bind = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
+    bind = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
     bind = , XF86AudioMute, exec, volumectl toggle-mute
     bind = , XF86AudioMicMute, exec, volumectl -m toggle-mute
 
-    # Change and save brightness setting
-    bind = , XF86MonBrightnessUp, exec, lightctl up && light -O
-    bind = , XF86MonBrightnessDown, exec, lightctl down && light -O
+    # Change and save brightness setting, ${avizoFlag} toggles
+    # dark mode icons
+    bind = , XF86MonBrightnessUp, exec, lightctl ${avizoFlag} up && light -O
+    bind = , XF86MonBrightnessDown, exec, lightctl ${avizoFlag} down && light -O
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, h, movefocus, l

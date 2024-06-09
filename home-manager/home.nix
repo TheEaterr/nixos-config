@@ -17,6 +17,7 @@
     outputs.homeManagerModules.rofi
     outputs.homeManagerModules.dunst
     outputs.homeManagerModules.wlogout
+    outputs.homeManagerModules.avizo
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
