@@ -73,14 +73,8 @@
     ];
   };
 
-  # catppuccin.enable = true;
-  catppuccin.accent = "peach";
-  catppuccin.flavor =
-    {
-      light = "latte";
-      dark = "mocha";
-    }
-    .${config.scheme.slug};
+  catppuccin.accent = config.theme.${config.scheme.slug}.accent;
+  catppuccin.flavor = config.theme.${config.scheme.slug}.flavor;
 
   home.pointerCursor = {
     gtk.enable = true;

@@ -11,6 +11,7 @@
   # You can import other home-manager modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/home-manager):
+    outputs.sharedModules.themeColors
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.waybar
     outputs.homeManagerModules.hyprland

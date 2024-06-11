@@ -1,6 +1,6 @@
-{pkgs, ...}: {
-  catppuccin.accent = "peach";
-  catppuccin.flavor = "mocha";
+{pkgs, config, ...}: {
+  catppuccin.accent = config.theme.dark.accent;
+  catppuccin.flavor = config.theme.dark.flavor;
   console.catppuccin.enable = true;
 
   # Override packages
