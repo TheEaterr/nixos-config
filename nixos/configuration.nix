@@ -24,6 +24,7 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
+    inputs.catppuccin.nixosModules.catppuccin
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootLoader
     outputs.nixosModules.displayManager

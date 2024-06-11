@@ -7,24 +7,24 @@
   # Toggle scheme between light and dark, taken from https://discourse.nixos.org/t/home-manager-toggle-between-themes/32907
   scheme = {
     slug = "dark";
-    scheme = "Graphite orange dark theme";
-    author = "Eaterr";
-    base00 = "0C0C0C"; # Black
-    base01 = "2C2C2C";
-    base02 = "4C4C4C";
-    base03 = "7C7C7C";
-    base04 = "9C9C9C";
-    base05 = "BCBCBC";
-    base06 = "ECECEC";
-    base07 = "FCFCFC"; # White
-    base08 = "ff4136"; # Red
-    base09 = "fb8c00"; # Orange
-    base0A = "ffdc00"; # Yellow
-    base0B = "2ecc40"; # Green
-    base0C = "7fdbff"; # Aqua
-    base0D = "0074d9"; # Blue
-    base0E = "b10dc9"; # Purple
-    base0F = "85144b"; # Maroon
+    scheme = "Catppuccin Mocha";
+    author = "https://github.com/catppuccin/catppuccin";
+    base00 = "1e1e2e"; # base
+    base01 = "181825"; # mantle
+    base02 = "313244"; # surface0
+    base03 = "45475a"; # surface1
+    base04 = "585b70"; # surface2
+    base05 = "cdd6f4"; # text
+    base06 = "f5e0dc"; # rosewater
+    base07 = "b4befe"; # lavender
+    base08 = "f38ba8"; # red
+    base09 = "fab387"; # peach
+    base0A = "f9e2af"; # yellow
+    base0B = "a6e3a1"; # green
+    base0C = "94e2d5"; # teal
+    base0D = "89b4fa"; # blue
+    base0E = "cba6f7"; # mauve
+    base0F = "f2cdcd"; # flamingo
   };
 
   home.packages = with pkgs; [
@@ -40,24 +40,24 @@
   specialisation.light.configuration = {
     scheme = lib.mkForce {
       slug = "light";
-      scheme = "Graphite orange light theme";
-      author = "Eaterr";
-      base00 = "FCFCFC";
-      base01 = "ECECEC";
-      base02 = "9C9C9C";
-      base03 = "7C7C7C";
-      base04 = "5C5C5C";
-      base05 = "4C4C4C";
-      base06 = "2C2C2C";
-      base07 = "0C0C0C"; # Black
-      base08 = "ff4136"; # Red
-      base09 = "fb8c00"; # Orange
-      base0A = "826601"; # Yellow
-      base0B = "307a01"; # Green
-      base0C = "01747a"; # Aqua
-      base0D = "0b017a"; # Blue
-      base0E = "b10dc9"; # Purple
-      base0F = "85144b"; # Maroon
+      scheme = "Catppuccin Latte";
+      author = "https://github.com/catppuccin/catppuccin";
+      base00 = "eff1f5"; # base
+      base01 = "e6e9ef"; # mantle
+      base02 = "ccd0da"; # surface0
+      base03 = "bcc0cc"; # surface1
+      base04 = "acb0be"; # surface2
+      base05 = "4c4f69"; # text
+      base06 = "dc8a78"; # rosewater
+      base07 = "7287fd"; # lavender
+      base08 = "d20f39"; # red
+      base09 = "fe640b"; # peach
+      base0A = "df8e1d"; # yellow
+      base0B = "40a02b"; # green
+      base0C = "179299"; # teal
+      base0D = "1e66f5"; # blue
+      base0E = "8839ef"; # mauve
+      base0F = "dd7878"; # flamingo
     };
     home.packages = with pkgs; [
       # note the hiPrio which makes this script more important then others and is usually used in nix to resolve name conflicts
@@ -73,74 +73,33 @@
     ];
   };
 
+  # catppuccin.enable = true;
+  catppuccin.accent = "peach";
+  catppuccin.flavor = {
+    light = "latte";
+    dark = "mocha";
+  }.${config.scheme.slug};
+
   home.pointerCursor = {
-    name = "phinger-cursors-light";
-    package = pkgs.phinger-cursors;
-    size = 24;
     gtk.enable = true;
+    name = "Catppuccin-Mocha-Peach-Cursors";
+    package = pkgs.catppuccin-cursors.mochaPeach;
   };
 
   qt = {
     enable = true;
-    platformTheme.name = "qtct";
+    style.catppuccin.enable = true;
+    style.catppuccin.apply = true;
     style.name = "kvantum";
-  };
-
-  xdg.configFile = {
-    "Kvantum/kvantum.kvconfig".text =
-      {
-        light = ''
-          [General]
-          theme=GraphiteNord
-        '';
-        dark = ''
-          [General]
-          theme=GraphiteNordDark
-        '';
-      }
-      .${config.scheme.slug};
-
-    "Kvantum/GraphiteNord".source = "${pkgs.graphite-kde-theme}/share/Kvantum/GraphiteNord";
   };
 
   gtk = {
     enable = true;
-    theme =
-      {
-        light = {
-          name = "Graphite-orange-Light";
-          package = pkgs.graphite-gtk-theme.override {
-            themeVariants = ["orange"];
-          };
-        };
-        dark = {
-          name = "Graphite-orange-Dark";
-          package = pkgs.graphite-gtk-theme.override {
-            themeVariants = ["orange"];
-          };
-        };
-      }
-      .${config.scheme.slug};
-    iconTheme =
-      {
-        light = {
-          name = "Tela-circle-orange-light";
-          package = pkgs.tela-circle-icon-theme.override {
-            colorVariants = ["orange"];
-          };
-        };
-        dark = {
-          name = "Tela-circle-orange-dark";
-          package = pkgs.tela-circle-icon-theme.override {
-            colorVariants = ["orange"];
-          };
-        };
-      }
-      .${config.scheme.slug};
+    catppuccin.enable = true;
+    catppuccin.cursor.enable = true;
+    catppuccin.icon.enable = true;
   };
 
   programs.btop.enable = true;
-  programs.btop.settings = {
-    color_theme = "TTY";
-  };
+  programs.btop.catppuccin.enable = true;
 }

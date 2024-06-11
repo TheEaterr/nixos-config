@@ -15,8 +15,9 @@
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
-    # Base16 theming
+    # Theming
     base16.url = "github:SenchoPens/base16.nix";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {

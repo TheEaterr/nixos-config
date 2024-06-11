@@ -26,6 +26,7 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     inputs.base16.homeManagerModule
+    inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
   nixpkgs = {

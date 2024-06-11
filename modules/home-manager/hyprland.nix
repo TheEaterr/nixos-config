@@ -36,7 +36,7 @@ in {
     # exec-once=hyprpaper
     exec-once=sleep 2 && nextcloud --background
     exec-once=signal-desktop --start-in-tray
-    exec-once=hyprctl setcursor phinger-cursors-light-hypr 25
+    exec-once=hyprctl setcursor catppuccin-mocha-peach-cursors 24
 
     # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
     input {
