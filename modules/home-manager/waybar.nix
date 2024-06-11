@@ -318,7 +318,7 @@
 
     window.top_bar .modules-center {
       background-color: #${config.scheme.base01};
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
       border-radius: 15px;
       padding-left: 20px;
       padding-top: 2px;
@@ -329,7 +329,7 @@
 
     window.top_bar .modules-left {
       background-color: #${config.scheme.base01};
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
       border-radius: 0px 15px 15px 0px;
       padding-left: 10px;
       padding-right: 10px;
@@ -344,7 +344,7 @@
       padding-left: 10px;
       margin-top: 5px;
       border: solid 2px #${config.scheme.base09};
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
       border-right: none;
     }
 
@@ -369,7 +369,7 @@
     }
 
     #workspaces button {
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
       padding: 2px;
     }
 
@@ -588,11 +588,11 @@
     }
 
     #backlight.high {
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
     }
 
     #pulseaudio {
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
     }
 
     #pulseaudio.low {
@@ -612,7 +612,7 @@
     }
 
     #pulseaudio.high {
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
     }
 
     #pulseaudio.bluetooth {

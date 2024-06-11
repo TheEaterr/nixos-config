@@ -75,10 +75,12 @@
 
   # catppuccin.enable = true;
   catppuccin.accent = "peach";
-  catppuccin.flavor = {
-    light = "latte";
-    dark = "mocha";
-  }.${config.scheme.slug};
+  catppuccin.flavor =
+    {
+      light = "latte";
+      dark = "mocha";
+    }
+    .${config.scheme.slug};
 
   home.pointerCursor = {
     gtk.enable = true;
@@ -102,4 +104,6 @@
 
   programs.btop.enable = true;
   programs.btop.catppuccin.enable = true;
+  programs.zellij.enable = true;
+  programs.zellij.catppuccin.enable = true;
 }

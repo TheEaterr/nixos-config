@@ -23,7 +23,7 @@
   home.file.".config/rofi/theme.rofi".text = ''
     * {
         red:                         #${config.scheme.base08};
-        selected-active-foreground:  #${config.scheme.base07};
+        selected-active-foreground:  #${config.scheme.base02};
         separatorcolor:              transparent;
         urgent-foreground:           rgba ( 204, 102, 102, 100 % );
         background-color:            transparent;
@@ -33,14 +33,14 @@
         spacing:                     2;
         blue:                        #${config.scheme.base0D};
         urgent-background:           var(background);
-        selected-normal-foreground:  #${config.scheme.base07};
+        selected-normal-foreground:  #${config.scheme.base02};
         active-foreground:           #${config.scheme.base09};
         background:                  #${config.scheme.base01}ee;
         selected-normal-background:  #${config.scheme.base09};
         selected-active-background:  #${config.scheme.base09};
         active-background:           #${config.scheme.base01}ee;
         foreground:                  #${config.scheme.base06};
-        selected-urgent-foreground:  #${config.scheme.base07};
+        selected-urgent-foreground:  #${config.scheme.base02};
         normal-foreground:           var(foreground);
     }
     window {
