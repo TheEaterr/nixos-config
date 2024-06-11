@@ -80,6 +80,29 @@
     gtk.enable = true;
   };
 
+  qt = {
+    enable = true;
+    platformTheme.name = "qtct";
+    style.name = "kvantum";
+  };
+
+  xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text =
+      {
+        light = ''
+          [General]
+          theme=GraphiteNord
+        '';
+        dark = ''
+          [General]
+          theme=GraphiteNordDark
+        '';
+      }
+      .${config.scheme.slug};
+
+    "Kvantum/GraphiteNord".source = "${pkgs.graphite-kde-theme}/share/Kvantum/GraphiteNord";
+  };
+
   gtk = {
     enable = true;
     theme =

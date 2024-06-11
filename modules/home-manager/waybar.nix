@@ -75,6 +75,7 @@
 
       "custom/dot" = {
         format = "";
+        tooltip = false;
       };
 
       # "custom/webcam = {

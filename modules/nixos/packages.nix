@@ -44,5 +44,6 @@
     zoom-us
     python3
     inkscape
+    nwg-look
   ];
 }

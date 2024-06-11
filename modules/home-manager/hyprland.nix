@@ -60,7 +60,10 @@ in {
     xwayland {
         force_zero_scaling = true
     }
-    env = GDK_SCALE, 1.4
+    # env = GDK_SCALE, 1.4
+
+    env = QT_QPA_PLATFORM,wayland
+    env = QT_STYLE_OVERRIDE,kvantum
 
     general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
