@@ -10,7 +10,7 @@
 
     button {
       margin: 8px;
-      color: #${config.scheme.base07};
+      color: #${config.scheme.base06};
       font-size: 16px;
       font-weight: bold;
       background-color: #${config.scheme.base01};

@@ -407,23 +407,23 @@
     }
 
     #idle_inhibitor.deactivated {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base05};
     }
 
     #custom-dunst.off {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base05};
     }
 
     #custom-airplane_mode.off {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base05};
     }
 
     #custom-night_mode.off {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base05};
     }
 
     #custom-media.Paused {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base05};
     }
 
     #custom-webcam {
@@ -568,19 +568,19 @@
     }
 
     #backlight {
-      color: #${config.scheme.base02};
+      color: #${config.scheme.base05};
     }
 
     #backlight.low {
-      color: #${config.scheme.base03};
+      color: #${config.scheme.base05};
     }
 
     #backlight.lower-medium {
-      color: #${config.scheme.base04};
+      color: #${config.scheme.base07};
     }
 
     #backlight.medium {
-      color: #${config.scheme.base05};
+      color: #${config.scheme.base07};
     }
 
     #backlight.upper-medium {
@@ -596,19 +596,19 @@
     }
 
     #pulseaudio.low {
-      color: #${config.scheme.base03};
-    }
-
-    #pulseaudio.lower-medium {
-      color: #${config.scheme.base04};
-    }
-
-    #pulseaudio.medium {
       color: #${config.scheme.base05};
     }
 
+    #pulseaudio.lower-medium {
+      color: #${config.scheme.base05};
+    }
+
+    #pulseaudio.medium {
+      color: #${config.scheme.base07};
+    }
+
     #pulseaudio.upper-medium {
-      color: #${config.scheme.base06};
+      color: #${config.scheme.base07};
     }
 
     #pulseaudio.high {
