@@ -197,10 +197,10 @@ in {
     bind = $mainMod, V, exec, fish -c clipboard_to_wlcopy
     bind = $mainMod, X, exec, fish -c clipboard_delete_item
     bind = $mainMod SHIFT, X, exec, fish -c clipboard_clear
-    bind = $mainMod, U, exec, fish -c bookmark_to_type
+    bind = $mainMod ALT, U, exec, fish -c bookmark_to_type
     bind = $mainMod SHIFT, U, exec, fish -c bookmark_add
     bind = $mainMod CTRL, U, exec, fish -c bookmark_delete
-    bind = $mainMod ALT, U, exec, fish -c bookmark_to_launch
+    bind = $mainMod, U, exec, fish -c bookmark_to_launch
     bind = $mainMod, C, exec, hyprpicker -a
     bind = $mainMod SHIFT, Q, killactive
     bind = $mainMod SHIFT, F, togglefloating,
