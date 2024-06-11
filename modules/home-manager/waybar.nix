@@ -25,7 +25,6 @@
       };
 
       "hyprland/submap" = {
-        format = "<span color='#a6da95'>Mode:</span> {}";
         tooltip = false;
       };
 
@@ -34,7 +33,7 @@
       };
 
       clock = {
-        format = "{:%H:%M <span color='#6e738d'></span> %F}";
+        format = "{:%H:%M <span color='#${config.scheme.base04}'></span> %F}";
         format-alt = "{:%H:%M}";
         tooltip-format = "<tt><small>{calendar}</small></tt>";
         actions = {
@@ -47,11 +46,11 @@
           on-scroll = 1;
           on-click-right = "mode";
           format = {
-            months = "<span color='#f4dbd6'><b>{}</b></span>";
-            days = "<span color='#cad3f5'><b>{}</b></span>";
-            weeks = "<span color='#c6a0f6'><b>S{}</b></span>";
-            weekdays = "<span color='#a6da95'><b>{}</b></span>";
-            today = "<span color='#8bd5ca'><b><u>{}</u></b></span>";
+            months = "<span color='#${config.scheme.base0E}'><b>{}</b></span>";
+            days = "<span color='#${config.scheme.base09}'><b>{}</b></span>";
+            weeks = "<span color='#${config.scheme.base0C}'><b>S{}</b></span>";
+            weekdays = "<span color='#${config.scheme.base0B}'><b>{}</b></span>";
+            today = "<span color='#${config.scheme.base08}'><b><u>{}</u></b></span>";
           };
         };
       };
@@ -140,8 +139,8 @@
           activated = "󰛐";
           deactivated = "󰛑";
         };
-        tooltip-format-activated = "Idle inhibitor <span color='#a6da95'>on</span>";
-        tooltip-format-deactivated = "Idle inhibitor <span color='#ee99a0'>off</span>";
+        tooltip-format-activated = "Idle inhibitor <span color='#${config.scheme.base0B}'>on</span>";
+        tooltip-format-deactivated = "Idle inhibitor <span color='#${config.scheme.base08}'>off</span>";
         start-activated = false;
       };
 
@@ -390,13 +389,14 @@
     }
 
     #submap {
-      background-color: alpha(#${config.scheme.base02}, 0.7);
+      background-color: alpha(#${config.scheme.base09}, 0.6);
+      color: #${config.scheme.base01};
       border-radius: 15px;
       padding-left: 15px;
       padding-right: 15px;
       margin-left: 10px;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 3px;
+      margin-bottom: 3px;
     }
 
     #clock.time {
