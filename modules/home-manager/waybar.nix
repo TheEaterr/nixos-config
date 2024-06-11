@@ -1,5 +1,6 @@
 {config, ...}: {
   programs.waybar.enable = true;
+   programs.waybar.systemd.enable = true;
 
   programs.waybar.settings = {
     mainBar = {
@@ -352,16 +353,24 @@
       border-radius: 5px;
     }
 
+    #tray  {
+      background-color: alpha(#${config.scheme.base09}, 0.6);
+      margin: 3px;
+      padding-left: 4px;
+      padding-right: 4px;
+      border-radius: 15px;
+    }
+
     #tray .active {
       border-radius: 5px;
     }
 
     #tray .active:hover {
-      background-color: #${config.scheme.base00};
+      background-color: #${config.scheme.base09};
     }
 
     .clickable:hover {
-      background-color: #${config.scheme.base00};
+      background-color: alpha(#${config.scheme.base09}, 0.3);
     }
 
     #workspaces button.active {
@@ -369,13 +378,13 @@
     }
 
     #workspaces button {
-      color: #${config.scheme.base06};
+      color: #${config.scheme.base05};
       padding: 2px;
     }
 
     #workspaces button:hover {
       background: inherit;
-      background-color: #${config.scheme.base00};
+      background-color: alpha(#${config.scheme.base09}, 0.3);
       box-shadow: inherit;
       text-shadow: inherit;
     }
