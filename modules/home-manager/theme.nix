@@ -90,6 +90,17 @@
     catppuccin.icon.enable = true;
   };
 
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = {
+          dark = "prefer-dark";
+          light = "";
+        }.${config.scheme.slug};
+      };
+    };
+  };
 
   # Have to manually specify cursors for it to work (no clue why)
   # Cursor change is also a bit wonky so we just use the dark cursor theme
