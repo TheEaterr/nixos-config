@@ -9,7 +9,13 @@
       type = lib.types.str;
       default = "peach";
     };
+
+    base16Accent = lib.mkOption {
+      type = lib.types.str;
+      default = "base09";
+    };
   };
+
   options.theme.dark = {
     flavor = lib.mkOption {
       type = lib.types.str;
@@ -20,16 +26,55 @@
       type = lib.types.str;
       default = "peach";
     };
+
+    base16Accent = lib.mkOption {
+      type = lib.types.str;
+      default = "base09";
+    };
   };
 
-  config.theme = {
+  options.theme = {
+    base16Accent = lib.mkOption {
+      type = lib.types.str;
+      default = "ffffff";
+    };
+  };
+
+  config.theme = let
+    accent2Base16 = {
+      rosewater = "base06";
+      lavender = "base07";
+      red = "base08";
+      peach = "base09";
+      yellow = "base0A";
+      green = "base0B";
+      teal = "base0C";
+      blue = "base0D";
+      mauve = "base0E";
+      flamingo = "base0F";
+
+      # These have no direct base16 equivalent
+      maroon = "base08";
+      pink = "base0F";
+      sapphire = "base0C";
+      sky = "base0D";
+    };
+
+    lightFlavor = "latte";
+    darkFlavor = "mocha";
+    lightAccent = "peach";
+    darkAccent = "peach";
+  in {
     light = {
-      flavor = "latte";
-      accent = "peach";
+      flavor = lightFlavor;
+      accent = lightAccent;
     };
     dark = {
-      flavor = "mocha";
-      accent = "peach";
+      flavor = darkFlavor;
+      accent = darkAccent;
     };
+
+    light.base16Accent = accent2Base16.${lightAccent};
+    dark.base16Accent = accent2Base16.${darkAccent};
   };
 }

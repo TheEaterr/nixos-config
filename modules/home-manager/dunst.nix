@@ -10,7 +10,7 @@
       notification_limit = 8;
       gap_size = 7;
       frame_width = 2;
-      frame_color = "#${config.scheme.base09}";
+      frame_color = "#${config.theme.base16Accent}";
       width = 300;
       height = 100;
     };

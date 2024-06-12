@@ -47,7 +47,7 @@
           on-click-right = "mode";
           format = {
             months = "<span color='#${config.scheme.base0E}'><b>{}</b></span>";
-            days = "<span color='#${config.scheme.base09}'><b>{}</b></span>";
+            days = "<span color='#${config.theme.base16Accent}'><b>{}</b></span>";
             weeks = "<span color='#${config.scheme.base0C}'><b>S{}</b></span>";
             weekdays = "<span color='#${config.scheme.base0B}'><b>{}</b></span>";
             today = "<span color='#${config.scheme.base08}'><b><u>{}</u></b></span>";
@@ -323,7 +323,7 @@
       padding-left: 20px;
       padding-top: 2px;
       padding-right: 20px;
-      border: solid 2px #${config.scheme.base09};
+      border: solid 2px #${config.theme.base16Accent};
       margin-top: 5px;
     }
 
@@ -333,7 +333,7 @@
       border-radius: 0px 15px 15px 0px;
       padding-left: 10px;
       padding-right: 10px;
-      border: solid 2px #${config.scheme.base09};
+      border: solid 2px #${config.theme.base16Accent};
       margin-top: 5px;
       border-left: none;
     }
@@ -343,7 +343,7 @@
       border-radius: 15px 0px 0px 15px;
       padding-left: 10px;
       margin-top: 5px;
-      border: solid 2px #${config.scheme.base09};
+      border: solid 2px #${config.theme.base16Accent};
       color: #${config.scheme.base06};
       border-right: none;
     }
@@ -353,7 +353,7 @@
     }
 
     #tray  {
-      background-color: alpha(#${config.scheme.base09}, 0.6);
+      background-color: alpha(#${config.theme.base16Accent}, 0.6);
       margin: 3px;
       padding-left: 4px;
       padding-right: 4px;
@@ -365,15 +365,15 @@
     }
 
     #tray .active:hover {
-      background-color: #${config.scheme.base09};
+      background-color: #${config.theme.base16Accent};
     }
 
     .clickable:hover {
-      background-color: alpha(#${config.scheme.base09}, 0.3);
+      background-color: alpha(#${config.theme.base16Accent}, 0.3);
     }
 
     #workspaces button.active {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #workspaces button {
@@ -383,13 +383,13 @@
 
     #workspaces button:hover {
       background: inherit;
-      background-color: alpha(#${config.scheme.base09}, 0.3);
+      background-color: alpha(#${config.theme.base16Accent}, 0.3);
       box-shadow: inherit;
       text-shadow: inherit;
     }
 
     #submap {
-      background-color: alpha(#${config.scheme.base09}, 0.6);
+      background-color: alpha(#${config.theme.base16Accent}, 0.6);
       color: #${config.scheme.base01};
       border-radius: 15px;
       padding-left: 15px;
@@ -440,7 +440,7 @@
     }
 
     #privacy-item.screenshare {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #privacy-item.audio-in {
@@ -485,7 +485,7 @@
     }
 
     #cpu.medium {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #cpu.upper-medium {
@@ -509,7 +509,7 @@
     }
 
     #memory.medium {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #memory.upper-medium {
@@ -533,7 +533,7 @@
     }
 
     #disk.medium {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #disk.upper-medium {
@@ -565,7 +565,7 @@
     }
 
     #battery.medium {
-      color: #${config.scheme.base09};
+      color: #${config.theme.base16Accent};
     }
 
     #battery.upper-medium {

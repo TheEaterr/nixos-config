@@ -69,7 +69,7 @@ in {
         gaps_in = 2.5
         gaps_out = 5
         border_size = 2
-        col.active_border = rgb(${config.scheme.base09})
+        col.active_border = rgb(${config.theme.base16Accent})
 
         layout = dwindle
     }

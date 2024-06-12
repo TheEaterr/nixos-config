@@ -26,7 +26,7 @@
     button:active,
     button:focus,
     button:hover {
-      border: solid 5px #${config.scheme.base09};
+      border: solid 5px #${config.theme.base16Accent};
       outline-style: none;
     }
 
