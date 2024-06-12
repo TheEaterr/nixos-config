@@ -318,6 +318,7 @@
     window.top_bar .modules-center {
       background-color: #${config.scheme.base01};
       color: #${config.scheme.base06};
+      font-weight: bold;
       border-radius: 15px;
       padding-left: 20px;
       padding-top: 2px;

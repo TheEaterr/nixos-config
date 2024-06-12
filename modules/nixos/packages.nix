@@ -45,5 +45,6 @@
     python3
     inkscape
     nwg-look
+    obs-studio
   ];
 }
