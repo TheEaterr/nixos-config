@@ -7,7 +7,7 @@
     .${
       config
       .scheme
-      .slug
+      .variant
     };
 in {
   wayland.windowManager.hyprland.enable = true;

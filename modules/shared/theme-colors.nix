@@ -1,9 +1,6 @@
-{
-  lib,
-  ...
-}: {
+{lib, ...}: {
   options.theme.light = {
-      flavor = lib.mkOption {
+    flavor = lib.mkOption {
       type = lib.types.str;
       default = "latte";
     };
@@ -14,7 +11,7 @@
     };
   };
   options.theme.dark = {
-      flavor = lib.mkOption {
+    flavor = lib.mkOption {
       type = lib.types.str;
       default = "mocha";
     };

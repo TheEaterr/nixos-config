@@ -1,4 +1,8 @@
-{pkgs, config, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   catppuccin.accent = config.theme.dark.accent;
   catppuccin.flavor = config.theme.dark.flavor;
   console.catppuccin.enable = true;
