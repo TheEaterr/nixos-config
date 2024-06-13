@@ -16,11 +16,9 @@
       '';
     })
   ];
-  theme.base16Accent = config.scheme.${config.theme.dark.base16Accent};
 
   specialisation.light.configuration = {
     scheme = lib.mkForce "${inputs.tt-schemes}/base16/catppuccin-${config.theme.light.flavor}.yaml";
-    theme.base16Accent = lib.mkForce config.scheme.${config.theme.dark.base16Accent};
 
     home.packages = with pkgs; [
       # note the hiPrio which makes this script more important then others and is usually used in nix to resolve name conflicts
@@ -36,6 +34,10 @@
     ];
   };
 
+  theme.base16Accent = {
+    light = config.scheme.${config.theme.light.base16Accent};
+    dark = config.scheme.${config.theme.dark.base16Accent};
+  }.${config.scheme.variant};
   catppuccin.accent = config.theme.${config.scheme.variant}.accent;
   catppuccin.flavor = config.theme.${config.scheme.variant}.flavor;
 

@@ -45,11 +45,11 @@
           on-scroll = 1;
           on-click-right = "mode";
           format = {
-            months = "<span color='#${config.scheme.base0E}'><b>{}</b></span>";
-            days = "<span color='#${config.theme.base16Accent}'><b>{}</b></span>";
-            weeks = "<span color='#${config.scheme.base0C}'><b>S{}</b></span>";
-            weekdays = "<span color='#${config.scheme.base0B}'><b>{}</b></span>";
-            today = "<span color='#${config.scheme.base08}'><b><u>{}</u></b></span>";
+            months = "<b>{}</b>";
+            days = "<b>{}</b>";
+            weeks = "<b>S{}</b>";
+            weekdays = "<b>{}</b>";
+            today = "<span color='#${config.theme.base16Accent}'><b><u>{}</u></b></span>";
           };
         };
       };
@@ -317,7 +317,7 @@
 
     window.top_bar .modules-center {
       background-color: #${config.scheme.base01};
-      color: #${config.scheme.base06};
+      color: #${config.scheme.base05};
       font-weight: bold;
       border-radius: 15px;
       padding-left: 20px;
@@ -412,7 +412,7 @@
     }
 
     #clock.calendar {
-      color: #${config.scheme.base0E};
+      color: #${config.scheme.base05};
     }
 
     #idle_inhibitor.deactivated {
