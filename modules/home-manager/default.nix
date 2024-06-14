@@ -11,4 +11,5 @@
   avizo = import ./avizo.nix;
   kitty = import ./kitty.nix;
   background = import ./background.nix;
+  hypridle = import ./hypridle.nix;
 }

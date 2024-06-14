@@ -34,10 +34,12 @@
     ];
   };
 
-  theme.base16Accent = {
-    light = config.scheme.${config.theme.light.base16Accent};
-    dark = config.scheme.${config.theme.dark.base16Accent};
-  }.${config.scheme.variant};
+  theme.base16Accent =
+    {
+      light = config.scheme.${config.theme.light.base16Accent};
+      dark = config.scheme.${config.theme.dark.base16Accent};
+    }
+    .${config.scheme.variant};
   catppuccin.accent = config.theme.${config.scheme.variant}.accent;
   catppuccin.flavor = config.theme.${config.scheme.variant}.flavor;
 

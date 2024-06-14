@@ -23,8 +23,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # wlsunset
     gammastep
-    brightnessctl
   ];
 }
