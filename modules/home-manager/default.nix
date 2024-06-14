@@ -10,4 +10,5 @@
   wlogout = import ./wlogout.nix;
   avizo = import ./avizo.nix;
   kitty = import ./kitty.nix;
+  background = import ./background.nix;
 }

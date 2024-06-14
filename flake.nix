@@ -63,6 +63,8 @@
     # Shared modules between nixos and home-manager
     sharedModules = import ./modules/shared;
 
+    assets = import ./assets;
+
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
     nixosConfigurations = {

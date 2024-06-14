@@ -20,6 +20,7 @@
     outputs.homeManagerModules.wlogout
     outputs.homeManagerModules.avizo
     outputs.homeManagerModules.kitty
+    outputs.homeManagerModules.background
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
