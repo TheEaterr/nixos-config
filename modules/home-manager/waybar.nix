@@ -45,10 +45,10 @@
           on-scroll = 1;
           on-click-right = "mode";
           format = {
-            months = "<b>{}</b>";
+            months = "<span color='#${config.theme.base16Accent}'><b>{}</b></span>";
             days = "<b>{}</b>";
-            weeks = "<b>S{}</b>";
-            weekdays = "<b>{}</b>";
+            weeks = "<span color='#${config.scheme.base04}'><b>S{}</b></span>";
+            weekdays = "<span color='#${config.scheme.base04}'><b>{}</b></span>";
             today = "<span color='#${config.theme.base16Accent}'><b><u>{}</u></b></span>";
           };
         };
@@ -316,7 +316,7 @@
     }
 
     window.top_bar .modules-center {
-      background-color: #${config.scheme.base01};
+      background-color: #${config.scheme.base02};
       color: #${config.scheme.base05};
       font-weight: bold;
       border-radius: 15px;
@@ -328,7 +328,7 @@
     }
 
     window.top_bar .modules-left {
-      background-color: #${config.scheme.base01};
+      background-color: #${config.scheme.base02};
       color: #${config.scheme.base06};
       border-radius: 0px 15px 15px 0px;
       padding-left: 10px;
@@ -339,7 +339,7 @@
     }
 
     window.top_bar .modules-right {
-      background-color: #${config.scheme.base01};
+      background-color: #${config.scheme.base02};
       border-radius: 15px 0px 0px 15px;
       padding-left: 10px;
       margin-top: 5px;
@@ -580,48 +580,8 @@
       color: #${config.scheme.base05};
     }
 
-    #backlight.low {
-      color: #${config.scheme.base05};
-    }
-
-    #backlight.lower-medium {
-      color: #${config.scheme.base07};
-    }
-
-    #backlight.medium {
-      color: #${config.scheme.base07};
-    }
-
-    #backlight.upper-medium {
-      color: #${config.scheme.base06};
-    }
-
-    #backlight.high {
-      color: #${config.scheme.base06};
-    }
-
     #pulseaudio {
-      color: #${config.scheme.base06};
-    }
-
-    #pulseaudio.low {
       color: #${config.scheme.base05};
-    }
-
-    #pulseaudio.lower-medium {
-      color: #${config.scheme.base05};
-    }
-
-    #pulseaudio.medium {
-      color: #${config.scheme.base07};
-    }
-
-    #pulseaudio.upper-medium {
-      color: #${config.scheme.base07};
-    }
-
-    #pulseaudio.high {
-      color: #${config.scheme.base06};
     }
 
     #pulseaudio.bluetooth {
@@ -629,7 +589,7 @@
     }
 
     #pulseaudio.muted {
-      color: #${config.scheme.base02};
+      color: #${config.scheme.base08};
     }
 
     #systemd-failed-units {

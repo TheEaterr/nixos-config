@@ -219,8 +219,8 @@ in {
 
     bind = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
     bind = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
-    bind = , XF86AudioMute, exec, volumectl toggle-mute
-    bind = , XF86AudioMicMute, exec, volumectl -m toggle-mute
+    bind = , XF86AudioMute, exec, volumectl ${avizoFlag} toggle-mute
+    bind = , XF86AudioMicMute, exec, volumectl ${avizoFlag} -m toggle-mute
 
     # Change and save brightness setting, ${avizoFlag} toggles
     # dark mode icons
