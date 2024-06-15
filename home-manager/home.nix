@@ -23,6 +23,7 @@
     outputs.homeManagerModules.background
     outputs.homeManagerModules.hypridle
     outputs.homeManagerModules.hyprlock
+    outputs.homeManagerModules.hyprpaper
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default

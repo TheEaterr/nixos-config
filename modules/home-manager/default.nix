@@ -13,4 +13,5 @@
   background = import ./background.nix;
   hypridle = import ./hypridle.nix;
   hyprlock = import ./hyprlock.nix;
+  hyprpaper = import ./hyprpaper.nix;
 }
