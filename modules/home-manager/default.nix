@@ -12,4 +12,5 @@
   kitty = import ./kitty.nix;
   background = import ./background.nix;
   hypridle = import ./hypridle.nix;
+  hyprlock = import ./hyprlock.nix;
 }

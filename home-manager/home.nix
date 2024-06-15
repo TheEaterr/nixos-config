@@ -22,6 +22,7 @@
     outputs.homeManagerModules.kitty
     outputs.homeManagerModules.background
     outputs.homeManagerModules.hypridle
+    outputs.homeManagerModules.hyprlock
 
     # Or modules exported from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModules.default
