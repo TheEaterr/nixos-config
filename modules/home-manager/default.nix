@@ -3,6 +3,7 @@
 {
   # List your module files here
   theme = import ./theme.nix;
+  themeGUI = import ./theme-gui.nix;
   waybar = import ./waybar.nix;
   hyprland = import ./hyprland.nix;
   rofi = import ./rofi.nix;
