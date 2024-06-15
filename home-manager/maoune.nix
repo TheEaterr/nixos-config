@@ -35,7 +35,7 @@
     optimise.automatic = true;
     gc = {
       automatic = true;
-      dates = "weekly";
+      frequency = "weekly";
       options = "--delete-older-than 14d";
     };
   };
