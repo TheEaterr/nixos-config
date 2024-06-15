@@ -1,5 +1,33 @@
 {config, ...}: {
-  home.file.".config/wlogout/style.css".text = ''
+  programs.wlogout.enable = true;
+  programs.wlogout.layout = [
+    {
+      label = "logout";
+      action = "loginctl terminate-user $USER";
+      text = "󰍃";
+      keybind = "e";
+    }
+    {
+      label = "shutdown";
+      action = "systemctl poweroff";
+      text = "󰐥";
+      keybind = "s";
+    }
+    {
+      label = "suspend";
+      action = "systemctl suspend";
+      text = "󰏦";
+      keybind = "u";
+    }
+    {
+      label = "reboot";
+      action = "systemctl reboot";
+      text = "";
+      keybind = "r";
+    }
+  ];
+
+  programs.wlogout.style = ''
     * {
       background-image: none;
     }
@@ -10,10 +38,12 @@
 
     button {
       margin: 8px;
-      color: #${config.scheme.base06};
-      font-size: 16px;
-      font-weight: bold;
-      background-color: #${config.scheme.base01};
+      color: #${config.theme.base16Accent};
+      font-size: 200px;
+      padding: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+      background-color: #${config.scheme.base02};
       background-repeat: no-repeat;
       background-position: center;
       background-size: 25%;
@@ -28,22 +58,6 @@
     button:hover {
       border: solid 5px #${config.theme.base16Accent};
       outline-style: none;
-    }
-
-    #logout {
-      background-image: image(url("icons/logout.png"));
-    }
-
-    #suspend {
-      background-image: image(url("icons/suspend.png"));
-    }
-
-    #shutdown {
-      background-image: image(url("icons/shutdown.png"));
-    }
-
-    #reboot {
-      background-image: image(url("icons/reboot.png"));
     }
   '';
 }
