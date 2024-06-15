@@ -24,13 +24,11 @@
       experimental-features = "nix-command flakes";
       # Opinionated: disable global registry
       flake-registry = "";
-      auto-optimise-store = true;
     };
     # Opinionated: make flake registry and nix path match flake inputs
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
 
     # Add gc settings
-    optimise.automatic = true;
     gc = {
       automatic = true;
       frequency = "weekly";
