@@ -11,6 +11,8 @@
   # You can import other home-manager modules here
   imports = [
     ./base.nix
+    outputs.sharedModules.themeColors
+    outputs.homeManagerModules.theme
   ];
 
   home = {
