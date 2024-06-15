@@ -18,6 +18,7 @@
   nix = let
     flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
   in {
+    package = pkgs.nix;
     settings = {
       # Enable flakes and new 'nix' command
       experimental-features = "nix-command flakes";
