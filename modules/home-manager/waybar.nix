@@ -344,7 +344,7 @@
       padding-left: 10px;
       margin-top: 5px;
       border: solid 2px #${config.theme.base16Accent};
-      color: #${config.scheme.base06};
+      color: #${config.theme.base16Accent};
       border-right: none;
     }
 
