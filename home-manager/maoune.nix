@@ -40,4 +40,15 @@
     username = "eaterr";
     homeDirectory = "/home/eaterr";
   };
+
+  programs.fish.enable = true;
+  programs.fish.interactiveShellInit = ''
+    echo "Welcome to interactive Fish shell"
+  '';
+  programs.fish.loginShellInit  = ''
+    echo "Welcome to login Fish shell"
+  '';
+  programs.fish.shellInit = ''
+    echo "Welcome to Fish shell"
+  '';
 }
