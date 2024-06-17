@@ -42,7 +42,7 @@
   };
 
   programs.fish.enable = true;
-  programs.fish.interactiveShellInit = ''
+  programs.fish.loginShellInit = ''
     echo "Current theme: $(cat ~/.config/current_theme)"
     echo "Remote theme: $LC_THEME"
     if [ $LC_THEME != $(cat ~/.config/current_theme) ]
