@@ -10,6 +10,11 @@
   services.geoclue2.enable = true;
   programs.thunar.enable = true;
 
+  # for auto mounting drives
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
+  services.devmon.enable = true;
+
   # so nextcloud stays connected
   services.gnome.gnome-keyring.enable = true;
   programs.seahorse.enable = true;
