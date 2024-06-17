@@ -16,4 +16,5 @@
   hyprlock = import ./hyprlock.nix;
   hyprpaper = import ./hyprpaper.nix;
   pyprland = import ./pyprland.nix;
+  micro = import ./micro.nix;
 }

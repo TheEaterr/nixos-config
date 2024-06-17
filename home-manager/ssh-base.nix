@@ -13,6 +13,7 @@
     ./base.nix
     outputs.sharedModules.themeColors
     outputs.homeManagerModules.theme
+    outputs.homeManagerModules.micro
   ];
 
   nix = let

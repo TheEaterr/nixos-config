@@ -27,6 +27,7 @@
     outputs.homeManagerModules.hyprlock
     outputs.homeManagerModules.hyprpaper
     outputs.homeManagerModules.pyprland
+    outputs.homeManagerModules.micro
   ];
 
   home = {
