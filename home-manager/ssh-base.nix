@@ -36,11 +36,6 @@
     };
   };
 
-  home = {
-    username = "eaterr";
-    homeDirectory = "/home/eaterr";
-  };
-
   programs.fish.enable = true;
   programs.fish.loginShellInit = ''
     echo "Current theme: $(cat ~/.config/current_theme)"
