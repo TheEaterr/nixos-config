@@ -43,6 +43,11 @@
 
   programs.fish.enable = true;
   programs.fish.interactiveShellInit = ''
-    echo "current theme: $LC_THEME"
+    echo "Current theme: $(cat ~/.config/current_theme)"
+    echo "Remote theme: $LC_THEME"
+    if [ $LC_THEME != $(cat ~/.config/current_theme) ]; then
+      echo "Setting theme to $LC_THEME"
+      fish -c "toggle-theme"
+    fi
   '';
 }
