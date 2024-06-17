@@ -31,8 +31,8 @@
     };
   };
 
-  # Enable home-manager and git
   programs.home-manager.enable = true;
+  programs.lsd.enable = true;
   programs.git.enable = true;
   programs.git.extraConfig = {
     user.name = "Paul Breuil";

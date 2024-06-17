@@ -77,12 +77,6 @@
         tooltip = false;
       };
 
-      # "custom/webcam = {
-      #     interval = 1;
-      #     exec = "fish -c check_webcam";
-      #     return-type = "json";
-      # };
-
       privacy = {
         icon-spacing = 1;
         icon-size = 12;

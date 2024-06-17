@@ -28,6 +28,8 @@
     outputs.homeManagerModules.hyprpaper
     outputs.homeManagerModules.pyprland
     outputs.homeManagerModules.micro
+    outputs.homeManagerModules.fish
+    outputs.homeManagerModules.hyprlandFishApps
   ];
 
   home = {

@@ -14,6 +14,7 @@
     outputs.sharedModules.themeColors
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.micro
+    outputs.homeManagerModules.fish
   ];
 
   nix = let
@@ -37,7 +38,6 @@
     };
   };
 
-  programs.fish.enable = true;
   programs.fish.loginShellInit = ''
     echo "Current theme: $(cat ~/.config/current_theme)"
     echo "Remote theme: $LC_THEME"

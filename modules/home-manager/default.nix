@@ -17,4 +17,6 @@
   hyprpaper = import ./hyprpaper.nix;
   pyprland = import ./pyprland.nix;
   micro = import ./micro.nix;
+  fish = import ./fish.nix;
+  hyprlandFishApps = import ./hyprland-fish-apps.nix;
 }
