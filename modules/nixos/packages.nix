@@ -23,7 +23,6 @@
     dunst
     wlogout
     git
-    chezmoi
     micro
     steam-run
     zellij
