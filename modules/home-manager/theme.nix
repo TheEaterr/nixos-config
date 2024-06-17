@@ -48,6 +48,8 @@
   catppuccin.accent = config.theme.${config.scheme.variant}.accent;
   catppuccin.flavor = config.theme.${config.scheme.variant}.flavor;
 
+  home.file.".config/current_theme".text = "${config.scheme.variant}";
+
   programs.btop.enable = true;
   programs.btop.catppuccin.enable = true;
   programs.zellij.enable = true;
