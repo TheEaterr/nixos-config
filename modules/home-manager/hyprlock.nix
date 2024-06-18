@@ -1,4 +1,8 @@
-{config, outputs, ...}: {
+{
+  config,
+  outputs,
+  ...
+}: {
   programs.hyprlock.enable = true;
   programs.hyprlock.extraConfig = ''
     $font = JetBrains Mono Regular
