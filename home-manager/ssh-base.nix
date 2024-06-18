@@ -39,12 +39,12 @@
   };
 
   programs.fish.loginShellInit = ''
-    echo "Current theme: $(cat ~/.config/current_theme)"
+    echo "Current theme: (cat ~/.config/current_theme)"
     if [ -z $LC_THEME ]
       echo "No remote theme set"
     else
       echo "Remote theme: $LC_THEME"
-      if [ $LC_THEME != $(cat ~/.config/current_theme) ]
+      if [ $LC_THEME != (cat ~/.config/current_theme) ]
         echo "Setting theme to $LC_THEME"
         toggle-theme
       end
