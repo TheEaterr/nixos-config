@@ -1,4 +1,4 @@
-{config, ...}: {
+{config, outputs, ...}: {
   programs.hyprlock.enable = true;
   programs.hyprlock.extraConfig = ''
     $font = JetBrains Mono Regular
@@ -12,7 +12,7 @@
     # BACKGROUND
     background {
         monitor =
-        path = $HOME/lockscreen_3x2.png
+        path = ${outputs.assets.lockscreen_3x2}
     }
 
     # TIME
@@ -53,19 +53,19 @@
         shadow_passes = 2
     }
 
-    # # USER AVATAR
-    # image {
-    #     monitor =
-    #     path = $HOME/.face
-    #     size = 350
-    #     border_color = $accent
-    #     rounding = -1
+    # USER AVATAR
+    image {
+        monitor =
+        path = ${outputs.assets.profile}
+        size = 200
+        border_color = rgb(${config.scheme.base01-rgb-r}, ${config.scheme.base01-rgb-g}, ${config.scheme.base01-rgb-b})
+        rounding = -1
 
-    #     position = 0, 75
-    #     halign = center
-    #     valign = center
-    #     shadow_passes = 2
-    # }
+        position = 0, 75
+        halign = center
+        valign = center
+        shadow_passes = 2
+    }
 
     # INPUT FIELD
     input-field {
@@ -76,18 +76,17 @@
         dots_spacing = 0.15 # Scale of dots' absolute size, 0.0 - 1.0
         dots_center = false
         dots_rounding = -1 # -1 default circle, -2 follow input-field rounding
-        outer_color = rgba(44,44,44)
-        inner_color = rgb( 239, 239, 239)
-        font_color = rgb(10, 10, 10)
-        font_family = $font
+        outer_color = rgb(${config.scheme.base01-rgb-r}, ${config.scheme.base01-rgb-g}, ${config.scheme.base01-rgb-b})
+        inner_color = rgb(${config.scheme.base01-rgb-r}, ${config.scheme.base01-rgb-g}, ${config.scheme.base01-rgb-b})
+
         fade_on_empty = false
         fade_timeout = 1000 # Milliseconds before fade_on_empty is triggered.
-        # placeholder_text = <i>Input Password...</i> # Text rendered in the input box when it's empty.
-        placeholder_text = <span foreground="##2C2C2C" style="italic">Input Password...</span>
+
+        placeholder_text = <span foreground="##${config.scheme.base05}" style="italic">Input Password...</span>
         hide_input = false
         rounding = 15 # -1 means complete rounding (circle/oval)
-        check_color = rgb(251, 140, 0)
-        fail_color = rgb(204, 34, 34) # if authentication failed, changes outer_color and fail message color
+        check_color = #${config.theme.base16Accent}
+        fail_color = #${config.scheme.base08} # if authentication failed, changes outer_color and fail message color
         fail_text = <i>$FAIL <b>($ATTEMPTS)</b></i> # can be set to empty
         fail_transition = 300 # transition time in ms between normal outer_color and fail_color
         capslock_color = -1
