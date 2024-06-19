@@ -97,6 +97,14 @@
           ./home-manager/ubuntu.nix
         ];
       };
+      "pbreuil" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main home-manager configuration file <
+          ./home-manager/ubuntu.nix
+        ];
+      };
     };
   };
 }
