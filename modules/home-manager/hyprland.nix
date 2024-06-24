@@ -119,10 +119,12 @@ in {
         enable_swallow = true
         swallow_regex = ^(kitty)$
         focus_on_activate = true
+        middle_click_paste = false
     }
 
     binds {
         workspace_back_and_forth = true
+        workspace_center_on = 1
     }
 
     # Example per-device config
