@@ -17,15 +17,15 @@
 
     urgency_low = {
       background = "#${config.scheme.base01}bb";
-      foreground = "#${config.theme.base16Accent}";
+      foreground = "#${config.scheme.base05}";
     };
     urgency_normal = {
       background = "#${config.scheme.base01}bb";
-      foreground = "#${config.theme.base16Accent}";
+      foreground = "#${config.scheme.base05}";
     };
     urgency_critical = {
       background = "#${config.scheme.base01}";
-      foreground = "#${config.theme.base16Accent}";
+      foreground = "#${config.scheme.base05}";
       frame_color = "#${config.scheme.base08}";
     };
   };
