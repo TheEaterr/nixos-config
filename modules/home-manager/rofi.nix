@@ -39,7 +39,7 @@
         selected-normal-background:  #${config.theme.base16Accent};
         selected-active-background:  #${config.theme.base16Accent};
         active-background:           #${config.scheme.base01}ee;
-        foreground:                  #${config.scheme.base06};
+        foreground:                  #${config.theme.base16Accent};
         selected-urgent-foreground:  #${config.scheme.base02};
         normal-foreground:           var(foreground);
     }
