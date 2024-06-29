@@ -45,5 +45,6 @@
     inkscape
     nwg-look
     obs-studio
+    libreoffice
   ];
 }

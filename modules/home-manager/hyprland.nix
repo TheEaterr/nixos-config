@@ -62,6 +62,7 @@ in {
 
     env = QT_QPA_PLATFORM,wayland
     env = QT_STYLE_OVERRIDE,kvantum
+    env = HYPRCURSOR_SIZE,32
 
     general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -208,7 +209,7 @@ in {
     bind = $mainMod , P, exec, wlrlui
     bind = $mainMod SHIFT, O, togglesplit, # dwindle
     bind = $mainMod ALT, M, exit,
-    bind = $mainMod, N, exec, toggle-theme
+    bind = $mainMod, N, exec, toggle-theme-gui
 
     bind = , XF86RFKill, exec, fish -c airplane_mode_toggle
     bind = $mainMod SHIFT, N, exec, dunstctl set-paused toggle

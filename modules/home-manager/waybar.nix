@@ -153,7 +153,7 @@
           }
           .${config.scheme.variant};
         interval = "once";
-        on-click = "toggle-theme";
+        on-click = "toggle-theme-gui";
       };
 
       "power-profiles-daemon#clickable" = {
