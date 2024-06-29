@@ -10,6 +10,7 @@
       border-color = "#${config.theme.base16Accent}";
       bar-fg-color = "#${config.theme.base16Accent}";
       border-width = 2;
+      time = 0.5;
     };
   };
 }
