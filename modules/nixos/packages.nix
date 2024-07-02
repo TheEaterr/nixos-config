@@ -46,5 +46,6 @@
     nwg-look
     obs-studio
     libreoffice
+    drawio
   ];
 }
