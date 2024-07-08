@@ -47,5 +47,6 @@
     obs-studio
     libreoffice
     drawio
+    onlyoffice-bin_latest
   ];
 }
