@@ -178,8 +178,6 @@ in {
     bind = $mainMod CTRL, T, exec, pypr toggle term
     windowrulev2 = opacity 0.7 0.7 0.7,class:(kitty-dropterm)
 
-    windowrule = float, ^(thunar)$
-
     bind = $mainMod, T, exec, kitty
     # bind = $mainMod CTRL, E, exec, pypr expose
     bind = $mainMod, Z, exec, pypr zoom
