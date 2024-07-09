@@ -33,6 +33,7 @@
     wev
     btop
     vim
+    unzip
     unstable.signal-desktop
     whatsapp-for-linux
     telegram-desktop
