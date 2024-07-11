@@ -53,7 +53,7 @@
     flavorUpper = mkUpper config.theme.dark.flavor;
   in {
     gtk.enable = true;
-    name = "Catppuccin-${flavorUpper}-${accentUpper}-Cursors";
+    name = "catppuccin-${config.theme.dark.flavor}-${config.theme.dark.accent}-cursors";
     package = pkgs.catppuccin-cursors.${config.theme.dark.flavor + accentUpper};
   };
 }
