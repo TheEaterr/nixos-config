@@ -17,10 +17,7 @@
 
     installPhase = ''
       runHook preInstall
-
-      ls
       install -Dm644 "Tw Cen MT Regular/Tw Cen MT Regular.ttf" -t $out/share/fonts/truetype
-
       runHook postInstall
     '';
   };
