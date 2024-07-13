@@ -49,5 +49,7 @@
     libreoffice
     drawio
     onlyoffice-bin_latest
+    discord
+    vlc
   ];
 }
