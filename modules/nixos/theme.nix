@@ -4,16 +4,14 @@
   lib,
   ...
 }: {
-
-  catppuccin.accent = lib.mkDefault config.theme.dark.accent;
-  catppuccin.flavor = lib.mkDefault config.theme.dark.flavor;
-
-  specialisation.light.configuration = {
-    catppuccin.accent = config.theme.light.accent;
-    catppuccin.flavor = config.theme.light.flavor;
-  };
+  catppuccin.accent = config.theme.${config.theme.variant}.accent;
+  catppuccin.flavor = config.theme.${config.theme.variant}.flavor;
 
   console.catppuccin.enable = true;
+
+  specialisation.light.configuration = {
+    config.theme.variant = "light";
+  };
 
   # Override packages
   nixpkgs.config.packageOverrides = pkgs: {

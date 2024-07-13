@@ -62,9 +62,6 @@
     # These are usually stuff you would upstream into home-manager
     homeManagerModules = import ./modules/home-manager;
 
-    # Shared modules between nixos and home-manager
-    sharedModules = import ./modules/shared;
-
     assets = import ./assets;
 
     # NixOS configuration entrypoint

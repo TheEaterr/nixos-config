@@ -25,7 +25,6 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
     inputs.catppuccin.nixosModules.catppuccin
-    outputs.sharedModules.themeColors
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootLoader
     outputs.nixosModules.displayManager
@@ -39,6 +38,7 @@
     outputs.nixosModules.services
     outputs.nixosModules.sound
     outputs.nixosModules.theme
+    outputs.nixosModules.themeColors
     outputs.nixosModules.users
   ];
 
@@ -87,7 +87,10 @@
   };
 
   home-manager = {
-    extraSpecialArgs = {inherit inputs outputs;};
+    extraSpecialArgs = {
+      inherit inputs outputs;
+      themeParams = config.theme;
+    };
     users = {
       # Import your home-manager configuration
       eaterr = import ../home-manager/home.nix;

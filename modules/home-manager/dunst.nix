@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  themeParams,
+  ...
+}: {
   services.dunst.enable = true;
   services.dunst.settings = {
     global = {
@@ -10,7 +14,7 @@
       notification_limit = 8;
       gap_size = 7;
       frame_width = 2;
-      frame_color = "#${config.theme.base16Accent}";
+      frame_color = "#${config.base16Accent}";
       width = 300;
       height = 100;
     };

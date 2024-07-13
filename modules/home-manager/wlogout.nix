@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  themeParams,
+  ...
+}: {
   programs.wlogout.enable = true;
   programs.wlogout.layout = [
     {
@@ -38,7 +42,7 @@
 
     button {
       margin: 8px;
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
       font-size: 200px;
       padding: 50px;
       padding-left: 0px;
@@ -56,7 +60,7 @@
     button:active,
     button:focus,
     button:hover {
-      border: solid 5px #${config.theme.base16Accent};
+      border: solid 5px #${config.base16Accent};
       outline-style: none;
     }
   '';

@@ -3,29 +3,39 @@
   inputs,
   config,
   lib,
+  themeParams,
   ...
-}: {
+}: let
+  schemes = {
+    light = "${inputs.tt-schemes}/base16/catppuccin-${themeParams.light.flavor}.yaml";
+    dark = "${inputs.tt-schemes}/base16/catppuccin-${themeParams.dark.flavor}.yaml";
+  };
+  alternateVariant =
+    if themeParams.variant == "light"
+    then "dark"
+    else "light";
+in {
   imports = [
     inputs.base16.homeManagerModule
     inputs.catppuccin.homeManagerModules.catppuccin
   ];
 
   # Toggle scheme between light and dark, taken from https://discourse.nixos.org/t/home-manager-toggle-between-themes/32907
-  scheme = "${inputs.tt-schemes}/base16/catppuccin-${config.theme.dark.flavor}.yaml";
-  home.packages = with pkgs; [
+  config.scheme = schemes.${themeParams.variant};
+  config.home.packages = with pkgs; [
     (writeShellApplication {
       name = "toggle-theme";
       runtimeInputs = with pkgs; [home-manager coreutils ripgrep];
       text = ''
-        "$(home-manager generations | head -1 | rg -o '/[^ ]*')"/specialisation/light/activate
+        "$(home-manager generations | head -1 | rg -o '/[^ ]*')"/specialisation/alternate/activate
       '';
     })
   ];
 
-  specialisation.light.configuration = {
-    scheme = lib.mkForce "${inputs.tt-schemes}/base16/catppuccin-${config.theme.light.flavor}.yaml";
+  config.specialisation.alternate.configuration = {
+    config.scheme = lib.mkForce schemes.${alternateVariant};
 
-    home.packages = with pkgs; [
+    config.home.packages = with pkgs; [
       # note the hiPrio which makes this script more important then others and is usually used in nix to resolve name conflicts
       (hiPrio (writeShellApplication {
         name = "toggle-theme";
@@ -39,19 +49,23 @@
     ];
   };
 
-  theme.base16Accent =
+  options.base16Accent = lib.mkOption {
+    type = lib.types.str;
+    default = "ffffff";
+  };
+  config.base16Accent =
     {
-      light = config.scheme.${config.theme.light.base16Accent};
-      dark = config.scheme.${config.theme.dark.base16Accent};
+      light = config.scheme.${themeParams.light.base16Accent};
+      dark = config.scheme.${themeParams.dark.base16Accent};
     }
     .${config.scheme.variant};
-  catppuccin.accent = config.theme.${config.scheme.variant}.accent;
-  catppuccin.flavor = config.theme.${config.scheme.variant}.flavor;
+  config.catppuccin.accent = themeParams.${config.scheme.variant}.accent;
+  config.catppuccin.flavor = themeParams.${config.scheme.variant}.flavor;
 
-  home.file.".config/current_theme".text = "${config.scheme.variant}";
+  config.home.file.".config/current_theme".text = "${config.scheme.variant}";
 
-  programs.btop.enable = true;
-  programs.btop.catppuccin.enable = true;
-  programs.zellij.enable = true;
-  programs.zellij.catppuccin.enable = true;
+  config.programs.btop.enable = true;
+  config.programs.btop.catppuccin.enable = true;
+  config.programs.zellij.enable = true;
+  config.programs.zellij.catppuccin.enable = true;
 }

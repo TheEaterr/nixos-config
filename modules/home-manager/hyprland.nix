@@ -1,4 +1,8 @@
-{config, ...}: let
+{
+  config,
+  themeParams,
+  ...
+}: let
   avizoFlag =
     {
       light = "";
@@ -70,7 +74,7 @@ in {
         gaps_in = 2.5
         gaps_out = 5
         border_size = 2
-        col.active_border = rgb(${config.theme.base16Accent})
+        col.active_border = rgb(${config.base16Accent})
 
         layout = dwindle
     }

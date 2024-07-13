@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  themeParams,
+  ...
+}: {
   programs.waybar.enable = true;
 
   programs.waybar.settings = {
@@ -45,11 +49,11 @@
           on-scroll = 1;
           on-click-right = "mode";
           format = {
-            months = "<span color='#${config.theme.base16Accent}'><b>{}</b></span>";
+            months = "<span color='#${config.base16Accent}'><b>{}</b></span>";
             days = "<b>{}</b>";
             weeks = "<span color='#${config.scheme.base04}'><b>S{}</b></span>";
             weekdays = "<span color='#${config.scheme.base04}'><b>{}</b></span>";
-            today = "<span color='#${config.theme.base16Accent}'><b><u>{}</u></b></span>";
+            today = "<span color='#${config.base16Accent}'><b><u>{}</u></b></span>";
           };
         };
       };
@@ -317,7 +321,7 @@
       padding-left: 20px;
       padding-top: 2px;
       padding-right: 20px;
-      border: solid 2px #${config.theme.base16Accent};
+      border: solid 2px #${config.base16Accent};
       margin-top: 5px;
     }
 
@@ -327,7 +331,7 @@
       border-radius: 0px 15px 15px 0px;
       padding-left: 10px;
       padding-right: 10px;
-      border: solid 2px #${config.theme.base16Accent};
+      border: solid 2px #${config.base16Accent};
       margin-top: 5px;
       border-left: none;
     }
@@ -337,8 +341,8 @@
       border-radius: 15px 0px 0px 15px;
       padding-left: 10px;
       margin-top: 5px;
-      border: solid 2px #${config.theme.base16Accent};
-      color: #${config.theme.base16Accent};
+      border: solid 2px #${config.base16Accent};
+      color: #${config.base16Accent};
       border-right: none;
     }
 
@@ -347,7 +351,7 @@
     }
 
     #tray  {
-      background-color: alpha(#${config.theme.base16Accent}, 0.6);
+      background-color: alpha(#${config.base16Accent}, 0.6);
       margin: 3px;
       padding-left: 4px;
       padding-right: 4px;
@@ -359,15 +363,15 @@
     }
 
     #tray .active:hover {
-      background-color: #${config.theme.base16Accent};
+      background-color: #${config.base16Accent};
     }
 
     .clickable:hover {
-      background-color: alpha(#${config.theme.base16Accent}, 0.3);
+      background-color: alpha(#${config.base16Accent}, 0.3);
     }
 
     #workspaces button.active {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #workspaces button {
@@ -377,13 +381,13 @@
 
     #workspaces button:hover {
       background: inherit;
-      background-color: alpha(#${config.theme.base16Accent}, 0.3);
+      background-color: alpha(#${config.base16Accent}, 0.3);
       box-shadow: inherit;
       text-shadow: inherit;
     }
 
     #submap {
-      background-color: alpha(#${config.theme.base16Accent}, 0.6);
+      background-color: alpha(#${config.base16Accent}, 0.6);
       color: #${config.scheme.base01};
       border-radius: 15px;
       padding-left: 15px;
@@ -434,7 +438,7 @@
     }
 
     #privacy-item.screenshare {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #privacy-item.audio-in {
@@ -479,7 +483,7 @@
     }
 
     #cpu.medium {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #cpu.upper-medium {
@@ -503,7 +507,7 @@
     }
 
     #memory.medium {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #memory.upper-medium {
@@ -527,7 +531,7 @@
     }
 
     #disk.medium {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #disk.upper-medium {
@@ -559,7 +563,7 @@
     }
 
     #battery.medium {
-      color: #${config.theme.base16Accent};
+      color: #${config.base16Accent};
     }
 
     #battery.upper-medium {

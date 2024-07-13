@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  themeParams,
+  ...
+}: {
   home.file.".config/rofi/config.rasi".text = ''
     configuration{
       modes: "window,drun,run,filebrowser";
@@ -27,19 +31,19 @@
         separatorcolor:              transparent;
         urgent-foreground:           rgba ( 204, 102, 102, 100 % );
         background-color:            transparent;
-        border-color:                #${config.theme.base16Accent};
+        border-color:                #${config.base16Accent};
         normal-background:           var(background);
         selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
         spacing:                     2;
         blue:                        #${config.scheme.base0D};
         urgent-background:           var(background);
         selected-normal-foreground:  #${config.scheme.base02};
-        active-foreground:           #${config.theme.base16Accent};
+        active-foreground:           #${config.base16Accent};
         background:                  #${config.scheme.base01}ee;
-        selected-normal-background:  #${config.theme.base16Accent};
-        selected-active-background:  #${config.theme.base16Accent};
+        selected-normal-background:  #${config.base16Accent};
+        selected-active-background:  #${config.base16Accent};
         active-background:           #${config.scheme.base01}ee;
-        foreground:                  #${config.theme.base16Accent};
+        foreground:                  #${config.base16Accent};
         selected-urgent-foreground:  #${config.scheme.base02};
         normal-foreground:           var(foreground);
     }

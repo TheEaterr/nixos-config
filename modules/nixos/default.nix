@@ -15,5 +15,6 @@
   services = import ./services.nix;
   sound = import ./sound.nix;
   theme = import ./theme.nix;
+  themeColors = import ./theme-colors.nix;
   users = import ./users.nix;
 }

@@ -34,9 +34,9 @@
   };
 
   options.theme = {
-    base16Accent = lib.mkOption {
+    variant = lib.mkOption {
       type = lib.types.str;
-      default = "ffffff";
+      default = "dark";
     };
   };
 
