@@ -49,11 +49,11 @@ in {
     ];
   };
 
-  options.base16Accent = lib.mkOption {
+  options.hexAccent = lib.mkOption {
     type = lib.types.str;
     default = "ffffff";
   };
-  config.base16Accent =
+  config.hexAccent =
     {
       light = config.scheme.${themeParams.light.base16Accent};
       dark = config.scheme.${themeParams.dark.base16Accent};

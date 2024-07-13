@@ -90,7 +90,7 @@
         placeholder_text = <span foreground="##${config.scheme.base05}" style="italic">Input Password...</span>
         hide_input = false
         rounding = 15 # -1 means complete rounding (circle/oval)
-        check_color = #${config.base16Accent}
+        check_color = #${config.hexAccent}
         fail_color = #${config.scheme.base08} # if authentication failed, changes outer_color and fail message color
         fail_text = <i>$FAIL <b>($ATTEMPTS)</b></i> # can be set to empty
         fail_transition = 300 # transition time in ms between normal outer_color and fail_color

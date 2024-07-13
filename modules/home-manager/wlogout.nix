@@ -42,7 +42,7 @@
 
     button {
       margin: 8px;
-      color: #${config.base16Accent};
+      color: #${config.hexAccent};
       font-size: 200px;
       padding: 50px;
       padding-left: 0px;
@@ -60,7 +60,7 @@
     button:active,
     button:focus,
     button:hover {
-      border: solid 5px #${config.base16Accent};
+      border: solid 5px #${config.hexAccent};
       outline-style: none;
     }
   '';

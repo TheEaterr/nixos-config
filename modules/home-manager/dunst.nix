@@ -14,7 +14,7 @@
       notification_limit = 8;
       gap_size = 7;
       frame_width = 2;
-      frame_color = "#${config.base16Accent}";
+      frame_color = "#${config.hexAccent}";
       width = 300;
       height = 100;
     };

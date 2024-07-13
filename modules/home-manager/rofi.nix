@@ -31,19 +31,19 @@
         separatorcolor:              transparent;
         urgent-foreground:           rgba ( 204, 102, 102, 100 % );
         background-color:            transparent;
-        border-color:                #${config.base16Accent};
+        border-color:                #${config.hexAccent};
         normal-background:           var(background);
         selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
         spacing:                     2;
         blue:                        #${config.scheme.base0D};
         urgent-background:           var(background);
         selected-normal-foreground:  #${config.scheme.base02};
-        active-foreground:           #${config.base16Accent};
+        active-foreground:           #${config.hexAccent};
         background:                  #${config.scheme.base01}ee;
-        selected-normal-background:  #${config.base16Accent};
-        selected-active-background:  #${config.base16Accent};
+        selected-normal-background:  #${config.hexAccent};
+        selected-active-background:  #${config.hexAccent};
         active-background:           #${config.scheme.base01}ee;
-        foreground:                  #${config.base16Accent};
+        foreground:                  #${config.hexAccent};
         selected-urgent-foreground:  #${config.scheme.base02};
         normal-foreground:           var(foreground);
     }
