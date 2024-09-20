@@ -19,8 +19,8 @@
     hyprpicker
     hyprcursor
     unstable.hyprlock
-    unstable.hypridle
-    unstable.hyprpaper
+    hypridle
+    hyprpaper
 
     imv
     kitty
