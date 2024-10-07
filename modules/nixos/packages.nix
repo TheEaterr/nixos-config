@@ -43,6 +43,7 @@
     krita
     zoom-us
     python3
+    python311Packages.pip
     inkscape
     nwg-look
     obs-studio
