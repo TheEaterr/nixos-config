@@ -50,7 +50,7 @@
     window {
         padding:          5;
         background-color: var(background);
-        border:           2;
+        border:           0;
         border-radius: 15;
     }
     mainbox {
