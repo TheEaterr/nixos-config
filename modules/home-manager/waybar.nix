@@ -321,7 +321,6 @@
       padding-left: 20px;
       padding-top: 2px;
       padding-right: 20px;
-      border: solid 2px #${config.hexAccent};
       margin-top: 5px;
     }
 
@@ -331,7 +330,6 @@
       border-radius: 0px 15px 15px 0px;
       padding-left: 10px;
       padding-right: 10px;
-      border: solid 2px #${config.hexAccent};
       margin-top: 5px;
       border-left: none;
     }
@@ -341,7 +339,6 @@
       border-radius: 15px 0px 0px 15px;
       padding-left: 10px;
       margin-top: 5px;
-      border: solid 2px #${config.hexAccent};
       color: #${config.hexAccent};
       border-right: none;
     }
