@@ -20,11 +20,11 @@
     };
 
     urgency_low = {
-      background = "#${config.scheme.base01}bb";
+      background = "#${config.scheme.base01}";
       foreground = "#${config.scheme.base05}";
     };
     urgency_normal = {
-      background = "#${config.scheme.base01}bb";
+      background = "#${config.scheme.base01}";
       foreground = "#${config.scheme.base05}";
     };
     urgency_critical = {
