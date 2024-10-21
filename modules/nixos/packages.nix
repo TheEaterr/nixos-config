@@ -53,5 +53,6 @@
     onlyoffice-bin_latest
     discord
     vlc
+    unstable.godot_4
   ];
 }
