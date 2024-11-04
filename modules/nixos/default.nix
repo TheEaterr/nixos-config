@@ -9,6 +9,7 @@
   gc = import ./gc.nix;
   hyprland = import ./hyprland.nix;
   i18n = import ./i18n.nix;
+  networking = import ./networking.nix;
   nixLd = import ./nix-ld.nix;
   packages = import ./packages.nix;
   printing = import ./printing.nix;

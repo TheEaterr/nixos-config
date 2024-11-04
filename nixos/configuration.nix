@@ -33,6 +33,7 @@
     outputs.nixosModules.hyprland
     outputs.nixosModules.i18n
     outputs.nixosModules.nixLd
+    outputs.nixosModules.networking
     outputs.nixosModules.packages
     outputs.nixosModules.printing
     outputs.nixosModules.services
@@ -102,8 +103,6 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "nixos"; # Define your hostname.
-  # Enable networking
-  networking.networkmanager.enable = true;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.11";
