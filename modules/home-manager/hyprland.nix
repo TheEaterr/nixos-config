@@ -139,6 +139,9 @@ in {
     #     sensitivity = -0.5
     # }
 
+    # Remove fade out animation when screenshotting using slurp
+    layerrule=noanim,selection
+
     # Example windowrule v1
     windowrule = opacity 0.7 0.7 0.7, ^(kitty)$
     windowrule = float, imv
