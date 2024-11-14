@@ -10,8 +10,8 @@
 }: {
   # You can import other home-manager modules here
   imports = [
+    ./theme-wrapper.nix
     ./base.nix
-    outputs.sharedModules.themeColors
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.micro
     outputs.homeManagerModules.fish
