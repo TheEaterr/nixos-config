@@ -29,7 +29,7 @@
   # the specialisation from the "upstream" nixos configuration is used.
   config.specialisation.alternate.configuration = let
     alternateVariant =
-      if themeParams.variant == "light"
+      if config.scheme.variant == "light"
       then "dark"
       else "light";
   in {
