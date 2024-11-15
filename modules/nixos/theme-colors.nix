@@ -1,4 +1,4 @@
-{lib, ...}: {
+{lib, inputs, ...}: {
   options.theme.light = {
     flavor = lib.mkOption {
       type = lib.types.str;
@@ -30,6 +30,18 @@
     base16Accent = lib.mkOption {
       type = lib.types.str;
       default = "base09";
+    };
+  };
+
+  options.theme.schemes = {
+    light = lib.mkOption {
+      type = lib.types.str;
+      default = "";
+    };
+
+    dark = lib.mkOption {
+      type = lib.types.str;
+      default = "";
     };
   };
 
@@ -76,5 +88,10 @@
 
     light.base16Accent = accent2Base16.${lightAccent};
     dark.base16Accent = accent2Base16.${darkAccent};
+
+    schemes = {
+      light = "${inputs.tt-schemes}/base16/catppuccin-${lightFlavor}.yaml";
+      dark = "${inputs.tt-schemes}/base16/catppuccin-${darkFlavor}.yaml";
+    };
   };
 }

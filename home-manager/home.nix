@@ -6,6 +6,7 @@
   lib,
   config,
   pkgs,
+  themeParams,
   ...
 }: {
   # You can import other home-manager modules here
@@ -31,7 +32,19 @@
     outputs.homeManagerModules.hyprlandFishApps
   ];
 
-  home = {
+  config.scheme = themeParams.schemes.${themeParams.variant};
+  config.home.packages = with pkgs; [
+    (writeShellApplication {
+      name = "toggle-theme";
+      text = if themeParams.variant == "light" then ''
+        sudo /nix/var/nix/profiles/system/bin/switch-to-configuration test
+      '' else ''
+        sudo /nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration test
+      '';
+    })
+  ];
+
+  config.home = {
     username = "eaterr";
     homeDirectory = "/home/eaterr";
   };
