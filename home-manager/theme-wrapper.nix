@@ -11,7 +11,7 @@
   ];
 
   # Pass the themeParams variable like done with nixos. Maybe not the cleanest way, but it works.
-  _module.args.themeParams = config.theme;
+  config._module.args.themeParams = config.theme;
 
   config.scheme = config.theme.schemes.${config.theme.variant};
   config.home.packages = with pkgs; [
