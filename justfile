@@ -6,7 +6,7 @@ help:
 # Switch to a new NixOS generation
 switch:
     just update-secrets
-    sudo nixos-rebuild switch --flake .#framework
+    sudo nixos-rebuild switch --flake .#framework --override-input nixos-secrets ../nixos-secrets
 
 # Switch to home-manager configs
 eaterr:
@@ -18,11 +18,11 @@ pbreuil:
 
 # Update the boot menu
 boot:
-    sudo nixos-rebuild boot --flake .#framework
+    sudo nixos-rebuild boot --flake .#framework --override-input nixos-secrets ../nixos-secrets
 
 # Rollback to the previous NixOS generation
 rollback:
-    sudo nixos-rebuild switch --rollback --flake .#framework
+    sudo nixos-rebuild switch --rollback --flake .#framework --override-input nixos-secrets ../nixos-secrets
 
 prune: 
     nix-collect-garbage -d

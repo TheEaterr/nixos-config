@@ -110,17 +110,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1732387327,
-        "narHash": "sha256-vO7FaGkkgczMNPeU4tZNhqcBINs5FkBP1KE+NF7eA10=",
-        "ref": "refs/heads/main",
-        "rev": "6c9b13e24f996294cb75a49b92e4cbdfe396f4b3",
-        "revCount": 2,
-        "type": "git",
-        "url": "file:///home/eaterr/nixos-secrets"
+        "lastModified": 1732394261,
+        "narHash": "sha256-sDGPqejEM4TxO4WAwxftCmRSEoXREOzaZpw4LVsXGF4=",
+        "owner": "TheEaterr",
+        "repo": "nixos-secrets-empty",
+        "rev": "157b9bc62842b3b48c7b78181dd4f69ba3427d44",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "file:///home/eaterr/nixos-secrets"
+        "owner": "TheEaterr",
+        "repo": "nixos-secrets-empty",
+        "type": "github"
       }
     },
     "nixpkgs": {

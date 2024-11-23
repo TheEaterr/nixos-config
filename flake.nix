@@ -18,7 +18,8 @@
     sops-nix.url = "github:Mic92/sops-nix";
     sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    nixos-secrets.url = "/home/eaterr/nixos-secrets";
+    # Using an empty repository as default so the configuration is usable without secrets
+    nixos-secrets.url = "github:TheEaterr/nixos-secrets-empty";
     nixos-secrets.inputs.nixpkgs.follows = "nixpkgs";
 
     # Theming
