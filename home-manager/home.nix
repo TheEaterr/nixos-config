@@ -38,9 +38,11 @@
       text =
         if themeParams.variant == "light"
         then ''
+          dunstify "Switching to dark theme"
           sudo /nix/var/nix/profiles/system/bin/switch-to-configuration test
         ''
         else ''
+          dunstify "Switching to light theme"
           sudo /nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration test
         '';
     })
