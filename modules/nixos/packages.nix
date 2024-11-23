@@ -54,5 +54,7 @@
     discord
     vlc
     unstable.godot_4
+    sops
+    age
   ];
 }

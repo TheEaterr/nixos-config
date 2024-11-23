@@ -1,5 +1,5 @@
 {
-  description = "Your new nix config";
+  description = "Eaterr's nix configuration";
 
   inputs = {
     # Nixpkgs
@@ -14,6 +14,12 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    sops-nix.url = "github:Mic92/sops-nix";
+    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixos-secrets.url = "/home/eaterr/nixos-secrets";
+    nixos-secrets.inputs.nixpkgs.follows = "nixpkgs";
 
     # Theming
     base16.url = "github:SenchoPens/base16.nix";
@@ -31,6 +37,7 @@
     nixpkgs,
     home-manager,
     nixos-hardware,
+    sops-nix,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -73,6 +80,7 @@
           # > Our main nixos configuration file <
           ./nixos/configuration.nix
           nixos-hardware.nixosModules.framework-13-7040-amd
+          sops-nix.nixosModules.sops
         ];
       };
     };
