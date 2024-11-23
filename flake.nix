@@ -30,6 +30,10 @@
       url = "github:tinted-theming/schemes";
       flake = false;
     };
+    base16-lsd = {
+      url = "github:eilefsen/base16-lsd";
+      flake = false;
+    };
   };
 
   outputs = {

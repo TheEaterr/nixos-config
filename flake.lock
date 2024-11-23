@@ -18,6 +18,22 @@
         "type": "github"
       }
     },
+    "base16-lsd": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698342194,
+        "narHash": "sha256-yjr6uz+jjAWW9UpUi4NsW05GnxmtqWe3n/PL3PxVsDg=",
+        "owner": "eilefsen",
+        "repo": "base16-lsd",
+        "rev": "412052ff15e3f3fd249aec2aacfdfc349db3deed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eilefsen",
+        "repo": "base16-lsd",
+        "type": "github"
+      }
+    },
     "catppuccin": {
       "locked": {
         "lastModified": 1719915848,
@@ -142,6 +158,7 @@
     "root": {
       "inputs": {
         "base16": "base16",
+        "base16-lsd": "base16-lsd",
         "catppuccin": "catppuccin",
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
