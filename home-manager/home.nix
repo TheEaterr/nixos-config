@@ -35,11 +35,14 @@
   config.home.packages = with pkgs; [
     (writeShellApplication {
       name = "toggle-theme";
-      text = if themeParams.variant == "light" then ''
-        sudo /nix/var/nix/profiles/system/bin/switch-to-configuration test
-      '' else ''
-        sudo /nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration test
-      '';
+      text =
+        if themeParams.variant == "light"
+        then ''
+          sudo /nix/var/nix/profiles/system/bin/switch-to-configuration test
+        ''
+        else ''
+          sudo /nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration test
+        '';
     })
   ];
 

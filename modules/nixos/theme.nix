@@ -23,18 +23,20 @@
 
   # allow switching between light and dark themes without sudo
   security.sudo = {
-    extraRules = [{
-      commands = [
-        {
-          command = "/nix/var/nix/profiles/system/bin/switch-to-configuration";
-          options = [ "NOPASSWD" ];
-        }
-        {
-          command = "/nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration";
-          options = [ "NOPASSWD" ];
-        }
-      ];
-      groups = [ "wheel" ];
-    }];
+    extraRules = [
+      {
+        commands = [
+          {
+            command = "/nix/var/nix/profiles/system/bin/switch-to-configuration";
+            options = ["NOPASSWD"];
+          }
+          {
+            command = "/nix/var/nix/profiles/system/specialisation/light/bin/switch-to-configuration";
+            options = ["NOPASSWD"];
+          }
+        ];
+        groups = ["wheel"];
+      }
+    ];
   };
 }

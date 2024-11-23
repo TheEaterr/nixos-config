@@ -34,3 +34,6 @@ update-secrets:
 
 update:
     nix flake update
+
+format:
+    nix fmt

@@ -1,4 +1,8 @@
-{lib, inputs, ...}: {
+{
+  lib,
+  inputs,
+  ...
+}: {
   options.theme.light = {
     flavor = lib.mkOption {
       type = lib.types.str;
