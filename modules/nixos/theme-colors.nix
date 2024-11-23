@@ -76,6 +76,7 @@
       sky = "base0D";
     };
 
+    # Theme parameters used in the configuration
     lightFlavor = "latte";
     darkFlavor = "mocha";
     lightAccent = "peach";
