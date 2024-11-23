@@ -41,6 +41,10 @@
     user.email = "tykapl.breuil@gmail.com";
   };
 
+  home.packages = with pkgs; [
+    just
+  ];
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
