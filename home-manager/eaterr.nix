@@ -1,5 +1,4 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
+# config file for eaterr in remote environment
 {
   inputs,
   outputs,
@@ -10,7 +9,7 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    ./ssh-base.nix
+    ./common/ssh-base.nix
   ];
 
   home = {

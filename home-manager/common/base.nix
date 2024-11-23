@@ -1,3 +1,4 @@
+# Base configurations for all configs
 {
   inputs,
   outputs,

@@ -3,20 +3,21 @@
 {
   # List your module files here
   theme = import ./theme.nix;
-  themeGUI = import ./theme-gui.nix;
-  waybar = import ./waybar.nix;
-  hyprland = import ./hyprland.nix;
-  rofi = import ./rofi.nix;
-  dunst = import ./dunst.nix;
-  wlogout = import ./wlogout.nix;
-  avizo = import ./avizo.nix;
-  kitty = import ./kitty.nix;
-  background = import ./background.nix;
-  hypridle = import ./hypridle.nix;
-  hyprlock = import ./hyprlock.nix;
-  hyprpaper = import ./hyprpaper.nix;
-  pyprland = import ./pyprland.nix;
   micro = import ./micro.nix;
   fish = import ./fish.nix;
-  hyprlandFishApps = import ./hyprland-fish-apps.nix;
+
+  themeGUI = import ./gui/theme-gui.nix;
+  waybar = import ./gui/waybar.nix;
+  hyprland = import ./gui/hyprland.nix;
+  rofi = import ./gui/rofi.nix;
+  dunst = import ./gui/dunst.nix;
+  wlogout = import ./gui/wlogout.nix;
+  avizo = import ./gui/avizo.nix;
+  kitty = import ./gui/kitty.nix;
+  background = import ./gui/background.nix;
+  hypridle = import ./gui/hypridle.nix;
+  hyprlock = import ./gui/hyprlock.nix;
+  hyprpaper = import ./gui/hyprpaper.nix;
+  pyprland = import ./gui/pyprland.nix;
+  hyprlandFishApps = import ./gui/hyprland-fish-apps.nix;
 }

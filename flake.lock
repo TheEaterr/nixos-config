@@ -94,10 +94,11 @@
         ]
       },
       "locked": {
-        "dirtyRev": "aeb33689e3d91d461dcf229c082ce3b741a9c178-dirty",
-        "dirtyShortRev": "aeb3368-dirty",
-        "lastModified": 1732386026,
+        "lastModified": 1732387327,
         "narHash": "sha256-vO7FaGkkgczMNPeU4tZNhqcBINs5FkBP1KE+NF7eA10=",
+        "ref": "refs/heads/main",
+        "rev": "6c9b13e24f996294cb75a49b92e4cbdfe396f4b3",
+        "revCount": 2,
         "type": "git",
         "url": "file:///home/eaterr/nixos-secrets"
       },

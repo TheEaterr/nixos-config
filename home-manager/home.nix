@@ -1,5 +1,4 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
+# config file for gui environments
 {
   inputs,
   outputs,
@@ -11,7 +10,7 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    ./base.nix
+    ./common/base.nix
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.themeGUI
