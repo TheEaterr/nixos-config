@@ -94,8 +94,10 @@
         ]
       },
       "locked": {
-        "lastModified": 0,
-        "narHash": "sha256-qJ6JvtwOy64NWx0jRfkmagM3oYSNlvI5EdiU75DSVpk=",
+        "dirtyRev": "aeb33689e3d91d461dcf229c082ce3b741a9c178-dirty",
+        "dirtyShortRev": "aeb3368-dirty",
+        "lastModified": 1732386026,
+        "narHash": "sha256-vO7FaGkkgczMNPeU4tZNhqcBINs5FkBP1KE+NF7eA10=",
         "type": "git",
         "url": "file:///home/eaterr/nixos-secrets"
       },

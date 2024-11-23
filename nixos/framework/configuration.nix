@@ -96,7 +96,7 @@
     };
     users = {
       # Import your home-manager configuration
-      eaterr = import ../home-manager/home.nix;
+      eaterr = import ../../home-manager/home.nix;
     };
     backupFileExtension = "backup";
     useUserPackages = false;
@@ -104,7 +104,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "framework"; # Define your hostname.
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "23.11";

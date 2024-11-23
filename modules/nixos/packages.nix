@@ -56,5 +56,6 @@
     unstable.godot_4
     sops
     age
+    just
   ];
 }
