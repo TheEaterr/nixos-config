@@ -10,11 +10,11 @@ switch:
 
 # Switch to home-manager configs
 eaterr:
-    home-manager switch --flake .#eaterr
+    home-manager switch -b backup --flake .#eaterr
 ubuntu:
-    home-manager switch --flake .#ubuntu
+    home-manager switch -b backup --flake .#ubuntu
 pbreuil:
-    home-manager switch --flake .#pbreuil
+    home-manager switch -b backup --flake .#pbreuil
 
 # Update the boot menu
 boot:
