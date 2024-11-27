@@ -5,6 +5,7 @@
   bluetooth = import ./bluetooth.nix;
   bootLoader = import ./boot-loader.nix;
   displayManager = import ./display-manager.nix;
+  distrobox = import ./distrobox.nix;
   fonts = import ./fonts.nix;
   gc = import ./gc.nix;
   hyprland = import ./hyprland.nix;

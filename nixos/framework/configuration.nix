@@ -30,6 +30,7 @@
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootLoader
     outputs.nixosModules.displayManager
+    outputs.nixosModules.distrobox
     outputs.nixosModules.fonts
     outputs.nixosModules.gc
     outputs.nixosModules.hyprland
