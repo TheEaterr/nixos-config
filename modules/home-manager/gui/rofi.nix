@@ -17,7 +17,7 @@
       filebrowser {
         /** Directory the file browser starts in. */
         directory: "/home/eaterr";
-        show-hidden: true;
+        show-hidden: false;
       }
     }
 
