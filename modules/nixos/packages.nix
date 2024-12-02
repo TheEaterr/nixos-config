@@ -56,5 +56,8 @@
     sops
     age
     gcc
+    chromium
+    slack
+    openvpn
   ];
 }

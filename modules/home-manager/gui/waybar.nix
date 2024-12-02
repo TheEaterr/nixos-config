@@ -354,15 +354,7 @@
       padding-right: 4px;
       border-radius: 15px;
     }
-
-    #tray .active {
-      border-radius: 5px;
-    }
-
-    #tray .active:hover {
-      background-color: #${config.hexAccent};
-    }
-
+  
     .clickable:hover {
       background-color: alpha(#${config.hexAccent}, 0.3);
     }
