@@ -9,6 +9,7 @@
   programs.light.enable = true;
   services.geoclue2.enable = true;
   programs.thunar.enable = true;
+  services.postgresql.enable = true;
 
   # for auto mounting drives
   services.gvfs.enable = true;
