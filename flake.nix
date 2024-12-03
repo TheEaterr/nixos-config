@@ -3,14 +3,14 @@
 
   inputs = {
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     # You can access packages and modules from different nixpkgs revs
     # at the same time. Here's an working example:
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -25,7 +25,7 @@
     # Theming
     base16.url = "github:SenchoPens/base16.nix";
     catppuccin = {
-      url = "github:catppuccin/nix/9345073d27d91ab66c1b6ab65df322906992aa59";
+      url = "github:catppuccin/nix?tag=v1.1.0";
     };
     tt-schemes = {
       url = "github:tinted-theming/schemes";

@@ -66,7 +66,6 @@ in {
 
     env = QT_QPA_PLATFORM,wayland
     env = QT_STYLE_OVERRIDE,kvantum
-    env = HYPRCURSOR_SIZE,32
 
     general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
