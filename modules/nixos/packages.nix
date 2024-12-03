@@ -59,5 +59,8 @@
     chromium
     slack
     openvpn
+    jetbrains.datagrip
+    jetbrains.idea-community
+    postgresql
   ];
 }
