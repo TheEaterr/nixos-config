@@ -8,6 +8,10 @@ switch:
     just update-secrets
     sudo nixos-rebuild switch --flake .#framework --override-input nixos-secrets ../nixos-secrets
 
+switch-light:
+    just update-secrets
+    sudo nixos-rebuild switch --specialisation light --flake .#framework --override-input nixos-secrets ../nixos-secrets
+
 # Switch to home-manager configs
 eaterr:
     home-manager switch -b backup --flake .#eaterr

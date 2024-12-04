@@ -39,7 +39,6 @@ in {
     exec-once=blueman-applet
     exec-once=sleep 2 && nextcloud --background
     exec-once=signal-desktop --start-in-tray
-    exec-once=hyprctl setcursor default,24
 
     # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
     input {
@@ -67,6 +66,7 @@ in {
 
     env = QT_QPA_PLATFORM,wayland
     env = QT_STYLE_OVERRIDE,kvantum
+    env = HYPRCURSOR_SIZE,24
 
     general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
