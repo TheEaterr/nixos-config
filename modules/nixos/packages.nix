@@ -63,5 +63,6 @@
     jetbrains.idea-community
     dotenv-cli
     jdk21
+    maven
   ];
 }
