@@ -59,8 +59,6 @@
     chromium
     slack
     openvpn
-    jetbrains.datagrip
-    jetbrains.idea-community
     dotenv-cli
     jdk21
     maven
