@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, lib, ...}: {
   services.flatpak.enable = true;
   services.upower.enable = true;
   programs.fish.enable = true;
@@ -9,7 +9,10 @@
   programs.light.enable = true;
   services.geoclue2.enable = true;
   programs.thunar.enable = true;
+
   services.postgresql.enable = true;
+  # So it isn't started automatically
+  systemd.services.postgresql.wantedBy = lib.mkForce [ ];
 
   # for auto mounting drives
   services.gvfs.enable = true;

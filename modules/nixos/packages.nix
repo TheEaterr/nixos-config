@@ -56,11 +56,11 @@
     sops
     age
     gcc
-    chromium
     slack
     openvpn
     dotenv-cli
     jdk21
     maven
+    clickhouse
   ];
 }
