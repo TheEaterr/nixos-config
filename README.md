@@ -1,4 +1,4 @@
-# A Hyprland Catpuccin powered NixOS and home manager configuration
+# TheEaterr's nix configuration
 
 <div align="center">
 <a href="https://nixos.org/">
@@ -11,14 +11,14 @@
 </a>
 </div>
 
-This is my NixOS and home manager configuration⚙️, for both NixOS native hosts or standard machines through home manager.
+This is my Hyprland and catpuccin powered NixOS ❄️ and home manager 🏠 configuration ⚙️, for both NixOS native hosts 💻 or standard machines 🌐 through home manager.
 
 It features:
 - ❄️ A completely deterministic and reproducible environment using Nix with flakes enabled.
 - 💧 A fully featured Hyprland configuration.
-- 🐱 Theming fully parametrized by catpuccin flavor and accent, using catpuccin.nix and base16.
+- 🐱 Theming fully parametrized by catpuccin flavor and accent, using [`catpuccin.nix`](https://github.com/catppuccin/nix) and [`base16`](https://github.com/SenchoPens/base16.nix).
 - 🌒 Live theme switching capabilities, for both local and remote hosts.
-- 🔒 Secret management using another private repository and sops-nix.
+- 🔒 Secret management using another private repository and [`sops-nix`](https://github.com/Mic92/sops-nix).
 - 📖 Justfile powered commands for easy management.
 
 <div align="center">
@@ -58,7 +58,7 @@ lightAccent = "peach";
 darkAccent = "peach";
 ```
 
-Live switching 🕹 between light and dark mode can be done by using the `toggle-theme` shell command, by pressing `SUPER + N` or by using the button in the waybar. Reloading can also be synced in remote hosts 🌐 using the alias `tssh` (instead of `ssh`), which will switch the mode in the remote host to the one used locally.
+Live switching 🕹 between light and dark mode can be done by using the `toggle-theme` shell command, by pressing `SUPER + N` or by using the button in the `waybar`. Reloading can also be synced in remote hosts 🌐 using the alias `tssh` (instead of `ssh`), which will switch the mode in the remote host to the one used locally.
 
 ## 🤫 Secrets
 
