@@ -62,5 +62,6 @@
     jdk21
     maven
     clickhouse
+    vscode
   ];
 }

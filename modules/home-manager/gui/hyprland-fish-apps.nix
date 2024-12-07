@@ -1,6 +1,5 @@
 {...}: {
   programs.fish.enable = true;
-  programs.fish.shellAliases.code = "/usr/local/VSCode-linux-x64/code --enable-features=UseOzonePlatform --ozone-platform=wayland";
 
   programs.fish.functions = {
     airplane_mode_toggle = ''
