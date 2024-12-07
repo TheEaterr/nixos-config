@@ -307,6 +307,7 @@
   programs.waybar.style = ''
     * {
       border: none;
+      font-family: NotoSans, FontAwesome6Free, SymbolsNerdFont;
     }
 
     window.top_bar#waybar {

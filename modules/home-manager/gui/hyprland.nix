@@ -66,7 +66,6 @@ in {
 
     env = QT_QPA_PLATFORM,wayland
     env = QT_STYLE_OVERRIDE,kvantum
-    env = HYPRCURSOR_SIZE,24
 
     general {
         # See https://wiki.hyprland.org/Configuring/Variables/ for more
@@ -144,10 +143,12 @@ in {
 
     # Example windowrule v1
     windowrule = opacity 0.7 0.7 0.7, ^(kitty)$
+    windowrule = opacity 0.85 0.85 0.85, ^(code)$
     windowrule = float, imv
     windowrule = center 1, swappy
-    windowrule = stayfocused, swappy
-    # windowrule = size 50% 50%, mpv
+
+    # don't idle when watching fullscreen videos
+    windowrulev2 = idleinhibit fullscreen, fullscreen:1
     # Example windowrule v2
     # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
     # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
@@ -215,6 +216,7 @@ in {
     bind = $mainMod SHIFT, O, togglesplit, # dwindle
     bind = $mainMod ALT, M, exit,
     bind = $mainMod, N, exec, toggle-theme-gui
+    bind = $mainMod, I, exec, fish -c cycle_power_profile
 
     bind = , XF86RFKill, exec, fish -c airplane_mode_toggle
     bind = $mainMod SHIFT, N, exec, dunstctl set-paused toggle

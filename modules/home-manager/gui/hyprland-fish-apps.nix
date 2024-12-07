@@ -121,6 +121,17 @@
       end
     '';
 
+    cycle_power_profile = ''
+      set profile $(powerprofilesctl get)
+      if [ $profile = "balanced" ]
+        powerprofilesctl set performance
+      else if [ $profile = "performance" ]
+        powerprofilesctl set power-saver
+      else
+        powerprofilesctl set balanced
+      end
+    '';
+
     dunst_pause = ''
       set COUNT_WAITING (dunstctl count waiting)
       set COUNT_DISPLAYED (dunstctl count displayed)
