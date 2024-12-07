@@ -32,7 +32,7 @@
       flake = false;
     };
     base16-lsd = {
-      url = "github:eilefsen/base16-lsd";
+      url = "github:TheEaterr/base16-lsd";
       flake = false;
     };
   };
