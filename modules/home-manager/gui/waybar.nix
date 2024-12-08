@@ -173,7 +173,7 @@
       };
 
       "cpu#clickable" = {
-        format = "󰻠{usage}%";
+        format = "󰻠 {usage}%";
         states = {
           high = 90;
           upper-medium = 70;
@@ -185,7 +185,7 @@
       };
 
       "memory#clickable" = {
-        format = "{percentage}%";
+        format = " {percentage}%";
         tooltip-format = "Main: ({used} GiB/{total} GiB)({percentage}%), available {avail} GiB";
         states = {
           high = 90;
@@ -198,7 +198,7 @@
       };
 
       "disk#clickable" = {
-        format = "󰋊{percentage_used}%";
+        format = "󰋊 {percentage_used}%";
         tooltip-format = "({used}/{total})({percentage_used}%) in '{path}', available {free}({percentage_free}%)";
         states = {
           high = 90;
@@ -214,8 +214,8 @@
         tooltip = false;
         thermal-zone = 2;
         critical-threshold = 80;
-        format = "{icon}{temperatureC}󰔄";
-        format-critical = "🔥{icon}{temperatureC}󰔄";
+        format = "{icon} {temperatureC}󰔄";
+        format-critical = "🔥{icon} {temperatureC}󰔄";
         format-icons = ["" "" "" "" ""];
       };
 
@@ -227,16 +227,16 @@
           lower-medium = 30;
           low = 10;
         };
-        format = "{icon}{capacity}%";
-        format-charging = "󱐋{icon}{capacity}%";
-        format-plugged = "󰚥{icon}{capacity}%";
+        format = "{icon} {capacity}%";
+        format-charging = "󱐋{icon} {capacity}%";
+        format-plugged = "󰚥{icon} {capacity}%";
         format-time = "{H} h {M} min";
         format-icons = ["󱃍" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
         tooltip-format = "{timeTo}";
       };
 
       backlight = {
-        format = "{icon}{percent}%";
+        format = "{icon} {percent}%";
         format-icons = [
           "󰌶"
           "󱩎"
@@ -271,12 +271,12 @@
           low = 10;
         };
         tooltip-format = "{desc}";
-        format = "{icon}{volume}%{format_source}";
-        format-bluetooth = "󰂱{icon}{volume}%{format_source}";
-        format-bluetooth-muted = "󰂱󰝟{volume}%{format_source}";
-        format-muted = "󰝟{volume}%{format_source}";
-        format-source = "󰍬{volume}%";
-        format-source-muted = "󰍭{volume}%";
+        format = "{icon} {volume}% {format_source}";
+        format-bluetooth = "󰂱{icon} {volume}% {format_source}";
+        format-bluetooth-muted = "󰂱󰝟 {volume}% {format_source}";
+        format-muted = "󰝟 {volume}% {format_source}";
+        format-source = "󰍬 {volume}%";
+        format-source-muted = "󰍭 {volume}%";
         format-icons = {
           headphone = "󰋋";
           hands-free = "";
