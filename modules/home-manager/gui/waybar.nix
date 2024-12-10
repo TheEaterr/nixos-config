@@ -228,8 +228,8 @@
           low = 10;
         };
         format = "{icon} {capacity}%";
-        format-charging = "󱐋{icon} {capacity}%";
-        format-plugged = "󰚥{icon} {capacity}%";
+        format-charging = "󱐋 {icon} {capacity}%";
+        format-plugged = "󰚥 {icon} {capacity}%";
         format-time = "{H} h {M} min";
         format-icons = ["󱃍" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹"];
         tooltip-format = "{timeTo}";
@@ -272,8 +272,8 @@
         };
         tooltip-format = "{desc}";
         format = "{icon} {volume}% {format_source}";
-        format-bluetooth = "󰂱{icon} {volume}% {format_source}";
-        format-bluetooth-muted = "󰂱󰝟 {volume}% {format_source}";
+        format-bluetooth = "󰂱 {icon} {volume}% {format_source}";
+        format-bluetooth-muted = "󰂱 󰝟 {volume}% {format_source}";
         format-muted = "󰝟 {volume}% {format_source}";
         format-source = "󰍬 {volume}%";
         format-source-muted = "󰍭 {volume}%";
