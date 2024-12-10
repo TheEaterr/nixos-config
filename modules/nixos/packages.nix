@@ -34,7 +34,7 @@
     btop
     vim
     unzip
-    unstable.signal-desktop
+    signal-desktop
     whatsapp-for-linux
     telegram-desktop
     nextcloud-client
@@ -52,7 +52,7 @@
     onlyoffice-bin_latest
     discord
     vlc
-    unstable.godot_4
+    godot_4
     sops
     age
     gcc

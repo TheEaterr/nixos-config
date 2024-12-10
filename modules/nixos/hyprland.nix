@@ -18,14 +18,14 @@
     pyprland
     hyprpicker
     hyprcursor
-    unstable.hyprlock
+    hyprlock
     hypridle
     hyprpaper
 
     imv
     kitty
     avizo
-    unstable.wlr-layout-ui
+    wlr-layout-ui
     wlr-randr
   ];
 }
