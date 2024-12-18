@@ -355,7 +355,7 @@
       padding-right: 4px;
       border-radius: 15px;
     }
-  
+
     .clickable:hover {
       background-color: alpha(#${config.hexAccent}, 0.3);
     }

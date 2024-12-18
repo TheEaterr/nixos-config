@@ -14,6 +14,7 @@
   nixLd = import ./nix-ld.nix;
   packages = import ./packages.nix;
   printing = import ./printing.nix;
+  python = import ./python.nix;
   services = import ./services.nix;
   sound = import ./sound.nix;
   theme = import ./theme.nix;

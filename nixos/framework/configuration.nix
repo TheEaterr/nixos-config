@@ -39,6 +39,7 @@
     outputs.nixosModules.networking
     outputs.nixosModules.packages
     outputs.nixosModules.printing
+    outputs.nixosModules.python
     outputs.nixosModules.services
     outputs.nixosModules.sound
     outputs.nixosModules.theme

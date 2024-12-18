@@ -1,4 +1,8 @@
-{pkgs, config, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   programs.fish.enable = true;
   # So fish is used in nix shell and similar
   programs.fish.interactiveShellInit = ''
