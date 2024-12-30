@@ -62,5 +62,6 @@
     maven
     clickhouse
     vscode
+    protonvpn-gui
   ];
 }
