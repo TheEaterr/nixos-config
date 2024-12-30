@@ -34,7 +34,7 @@ prune:
 
 # Update the secrets flakes input
 update-secrets:
-    nix flake lock --update-input nixos-secrets
+    nix flake update nixos-secrets
 
 update:
     nix flake update
