@@ -27,9 +27,9 @@
   config.home.file.".config/current_theme".text = "${config.scheme.variant}";
 
   config.programs.btop.enable = true;
-  config.programs.btop.catppuccin.enable = true;
+  config.catppuccin.btop.enable = true;
   config.programs.zellij.enable = true;
-  config.programs.zellij.catppuccin.enable = true;
+  config.catppuccin.zellij.enable = true;
   config.home.file.".config/lsd/config.yaml".text = ''
     color:
       theme: custom

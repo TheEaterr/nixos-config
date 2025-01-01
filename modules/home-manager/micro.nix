@@ -1,6 +1,6 @@
 {config, ...}: {
   programs.micro.enable = true;
-  programs.micro.catppuccin.enable = true;
+  catppuccin.micro.enable = true;
 
   programs.micro.settings = {
     clipboard = "terminal";

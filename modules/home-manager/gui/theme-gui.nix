@@ -17,17 +17,17 @@
 
   qt = {
     enable = true;
-    style.catppuccin.enable = true;
-    style.catppuccin.apply = true;
     style.name = "kvantum";
     platformTheme.name = "kvantum";
   };
+  catppuccin.kvantum.apply = true;
+  catppuccin.kvantum.enable = true;
 
   gtk = {
     enable = true;
-    catppuccin.enable = true;
-    catppuccin.icon.enable = true;
   };
+  catppuccin.gtk.icon.enable = true;
+  catppuccin.gtk.enable = true;
 
   dconf = {
     enable = true;
@@ -43,6 +43,6 @@
     };
   };
 
-  catppuccin.pointerCursor.enable = true;
-  wayland.windowManager.hyprland.catppuccin.enable = true;
+  catppuccin.cursors.enable = true;
+  catppuccin.hyprland.enable = true;
 }

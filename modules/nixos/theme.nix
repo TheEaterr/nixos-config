@@ -7,7 +7,7 @@
   catppuccin.accent = config.theme.${config.theme.variant}.accent;
   catppuccin.flavor = config.theme.${config.theme.variant}.flavor;
 
-  console.catppuccin.enable = true;
+  catppuccin.tty.enable = true;
 
   specialisation.light.configuration = {
     config.theme.variant = "light";
