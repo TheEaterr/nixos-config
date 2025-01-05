@@ -20,13 +20,13 @@
     {
       label = "suspend";
       action = "systemctl suspend";
-      text = "󰏦";
+      text = "󰏦 ";
       keybind = "u";
     }
     {
       label = "reboot";
       action = "systemctl reboot";
-      text = "";
+      text = " ";
       keybind = "r";
     }
   ];
@@ -43,7 +43,7 @@
     button {
       margin: 8px;
       color: #${config.hexAccent};
-      font-size: 200px;
+      font-size: 150px;
       padding: 50px;
       padding-left: 0px;
       padding-right: 0px;
