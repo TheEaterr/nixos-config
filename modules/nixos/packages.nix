@@ -63,5 +63,7 @@
     clickhouse
     vscode
     protonvpn-gui
+    gnumake
+    sqlite
   ];
 }
