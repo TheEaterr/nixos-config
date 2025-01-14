@@ -39,7 +39,7 @@ in {
     exec-once=blueman-applet
     exec-once=sleep 2 && nextcloud --background
     # Shoudln't be necessary but something overrides the env var HYPRCURSOR_SIZE so I'm forcing it there.
-    exec-once=hyprctl setcursor default 24
+    exec-once=hyprctl setcursor default 32
     exec-once=signal-desktop --start-in-tray
 
     # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
