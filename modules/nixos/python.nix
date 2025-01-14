@@ -25,10 +25,10 @@
   wrapPrefix = if (!pkgs.stdenv.isDarwin) then "LD_LIBRARY_PATH" else "DYLD_LIBRARY_PATH";
   patchedpython = (pkgs.symlinkJoin {
     name = "python";
-    paths = [ pkgs.python312 ];
+    paths = [ pkgs.python311 ];
     buildInputs = [ pkgs.makeWrapper ];
     postBuild = ''
-      wrapProgram "$out/bin/python3.12" --prefix ${wrapPrefix} : "${pythonldlibpath}"
+      wrapProgram "$out/bin/python3.11" --prefix ${wrapPrefix} : "${pythonldlibpath}"
     '';
   });
   patchedpoetry = (pkgs.symlinkJoin {
