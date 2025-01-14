@@ -44,6 +44,7 @@
       margin: 8px;
       color: #${config.hexAccent};
       font-size: 150px;
+      min-width: 300px;
       padding: 50px;
       padding-left: 0px;
       padding-right: 0px;
