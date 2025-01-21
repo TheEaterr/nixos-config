@@ -65,5 +65,6 @@
     protonvpn-gui
     gnumake
     sqlite
+    teams-for-linux
   ];
 }
