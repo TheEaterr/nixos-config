@@ -120,7 +120,7 @@ in {
     misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = 0x24273a
+        background_color = 0x${config.scheme.base01}
         initial_workspace_tracking = 0
         enable_swallow = true
         swallow_regex = ^(kitty)$
