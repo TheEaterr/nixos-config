@@ -5,6 +5,7 @@
   programs.micro.settings = {
     clipboard = "terminal";
   };
+  home.sessionVariables.EDITOR = "micro";
 
   home.file.".config/micro/bindings.json".text = ''
     {
