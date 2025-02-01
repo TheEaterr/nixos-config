@@ -28,13 +28,6 @@
     };
     # Opinionated: make flake registry and nix path match flake inputs
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
-
-    # Add gc settings
-    gc = {
-      automatic = true;
-      frequency = "weekly";
-      options = "--delete-older-than 14d";
-    };
   };
 
   programs.fish.loginShellInit = ''

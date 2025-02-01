@@ -19,6 +19,8 @@ ubuntu:
     home-manager switch -b backup --flake .#ubuntu
 pbreuil:
     home-manager switch -b backup --flake .#pbreuil
+pbreuil_rootless:
+    home-manager switch -b backup --flake .#pbreuil_rootless
 
 # Update the boot menu
 boot:

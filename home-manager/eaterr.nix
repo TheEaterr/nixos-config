@@ -9,7 +9,7 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    ./common/ssh-base.nix
+    ./common/ssh-gc.nix
   ];
 
   home = {

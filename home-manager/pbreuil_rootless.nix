@@ -1,4 +1,4 @@
-# config file for ubuntu in remote environment
+# config file for pbreuil in remote environment
 {
   inputs,
   outputs,
@@ -9,11 +9,11 @@
 }: {
   # You can import other home-manager modules here
   imports = [
-    ./common/ssh-gc.nix
+    ./common/ssh-base.nix
   ];
 
   home = {
-    username = "ubuntu";
-    homeDirectory = "/home/ubuntu";
+    username = "pbreuil";
+    homeDirectory = "/home/pbreuil";
   };
 }
