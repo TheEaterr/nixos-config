@@ -229,15 +229,15 @@ in {
     bind = , XF86AudioNext, exec, playerctl next
     bind = , XF86AudioPrev, exec, playerctl previous
 
-    bind = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
-    bind = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
+    binde = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
+    binde = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
     bind = , XF86AudioMute, exec, volumectl ${avizoFlag} toggle-mute
     bind = , XF86AudioMicMute, exec, volumectl ${avizoFlag} -m toggle-mute
 
     # Change and save brightness setting, ${avizoFlag} toggles
     # dark mode icons
-    bind = , XF86MonBrightnessUp, exec, lightctl ${avizoFlag} up && light -O
-    bind = , XF86MonBrightnessDown, exec, lightctl ${avizoFlag} down && light -O
+    binde = , XF86MonBrightnessUp, exec, lightctl ${avizoFlag} up && light -O
+    binde = , XF86MonBrightnessDown, exec, lightctl ${avizoFlag} down && light -O
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, h, movefocus, l
