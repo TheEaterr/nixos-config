@@ -66,5 +66,6 @@
     gnumake
     sqlite
     teams-for-linux
+    yarn
   ];
 }
