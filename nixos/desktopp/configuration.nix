@@ -25,8 +25,8 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
     inputs.catppuccin.nixosModules.catppuccin
-    # inputs.nixos-secrets.nixosModules.networkingProfiles
-    # inputs.nixos-secrets.nixosModules.ssh
+    inputs.nixos-secrets.nixosModules.networkingProfiles
+    inputs.nixos-secrets.nixosModules.ssh
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootLoader
     outputs.nixosModules.displayManager
