@@ -22,6 +22,12 @@
     nixos-secrets.url = "github:TheEaterr/nixos-secrets-empty";
     nixos-secrets.inputs.nixpkgs.follows = "nixpkgs";
 
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.2";
+      # Optional but recommended to limit the size of your system closure.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # Theming
     base16.url = "github:SenchoPens/base16.nix";
     catppuccin = {
@@ -43,6 +49,7 @@
     home-manager,
     nixos-hardware,
     sops-nix,
+    lanzaboote,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -86,6 +93,16 @@
           ./nixos/framework/configuration.nix
           nixos-hardware.nixosModules.framework-13-7040-amd
           sops-nix.nixosModules.sops
+          lanzaboote.nixosModules.lanzaboote
+        ];
+      };
+      desktopp = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main nixos configuration file <
+          ./nixos/desktopp/configuration.nix
+          sops-nix.nixosModules.sops
+          lanzaboote.nixosModules.lanzaboote
         ];
       };
     };
