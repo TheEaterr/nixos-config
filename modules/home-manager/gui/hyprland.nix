@@ -249,6 +249,8 @@ in {
     bind = $mainMod, Tab, cyclenext,
     bind = $mainMod, Tab, bringactivetotop,
 
+    bind = $mainMod, O,  movecurrentworkspacetomonitor, +1
+
     # Switch workspaces with mainMod + [0-9]
     bind = $mainMod, ampersand, workspace, 1
     bind = $mainMod, eacute, workspace, 2
