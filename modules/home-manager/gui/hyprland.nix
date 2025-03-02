@@ -53,6 +53,7 @@ in {
         kb_rules =
 
         follow_mouse = 1
+        numlock_by_default = true
 
         touchpad {
             natural_scroll = yes
