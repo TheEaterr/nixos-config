@@ -67,5 +67,6 @@
     sqlite
     teams-for-linux
     yarn
+    go
   ];
 }
