@@ -13,14 +13,11 @@ switch-light:
     sudo nixos-rebuild switch --specialisation light --flake .#$(hostname) --override-input nixos-secrets ../nixos-secrets
 
 # Switch to home-manager configs
-eaterr:
-    home-manager switch -b backup --flake .#eaterr
-ubuntu:
-    home-manager switch -b backup --flake .#ubuntu
-pbreuil:
-    home-manager switch -b backup --flake .#pbreuil
-pbreuil_rootless:
-    home-manager switch -b backup --flake .#pbreuil_rootless
+user-switch:
+    home-manager switch -b backup --flake .#(echo $USER)
+
+rootless-switch:
+    home-manager switch -b backup --flake .#(echo $USER)_rootless
 
 # Update the boot menu
 boot:

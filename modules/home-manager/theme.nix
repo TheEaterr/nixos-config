@@ -8,7 +8,7 @@
 }: {
   imports = [
     inputs.base16.homeManagerModule
-    inputs.catppuccin.homeManagerModules.catppuccin
+    inputs.catppuccin.homeModules.catppuccin
   ];
 
   options.hexAccent = lib.mkOption {
