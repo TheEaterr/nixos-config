@@ -41,28 +41,29 @@
     bookmark_add = ''
       if [ -z $(wl-paste) ]
         dunstify "Bookmarks" "Can`t add empty space" -u critical -t 2000
-      else if grep -q "^$(wl-paste)\$" .bookmarks
+      else if grep -q "^$(wl-paste)\$" ~/Nextcloud/.bookmarks
         dunstify "Bookmarks" "Bookmark '$(wl-paste)' already exists" -u critical -t 2000
       else
-        wl-paste >> .bookmarks;
+        wl-paste >> ~/Nextcloud/.bookmarks;
         dunstify "Bookmarks" "Bookmark '$(wl-paste)' was added" -t 2000
       end
     '';
 
     bookmark_delete = ''
-      set bookmark $(cat .bookmarks | rofi -dmenu -p 'delete bookmark')
+      set bookmark $(cat ~/Nextcloud/.bookmarks | rofi -dmenu -p 'delete bookmark')
       if not [ -z $bookmark ]
-        sed -i -e /$bookmark/d .bookmarks
+        set bookmarkEscaped $(sed 's/[^^]/[&]/g; s/\^/\\^/g' <<<"$bookmark")
+        sed -i -e /$bookmarkEscaped/d ~/Nextcloud/.bookmarks
         dunstify "Bookmarks" "Bookmark '$bookmark' was deleted" -t 2000
       end
     '';
 
     bookmark_to_launch = ''
-      set bookmark $(cat .bookmarks | rofi -dmenu -p 'launch bookmark' | tr -d '\n')
+      set bookmark $(cat ~/Nextcloud/.bookmarks | rofi -dmenu -p 'launch bookmark' | tr -d '\n')
       xdg-open $bookmark
     '';
 
-    bookmark_to_type = "cat .bookmarks | rofi -dmenu -p 'type bookmark' | tr -d '\n' | wtype -";
+    bookmark_to_type = "cat ~/Nextcloud/.bookmarks | rofi -dmenu -p 'type bookmark' | tr -d '\n' | wtype -";
 
     check_airplane_mode = ''
       set backup_file ~/.cache/airplane_backup
