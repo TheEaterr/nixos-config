@@ -27,6 +27,7 @@
     inputs.catppuccin.nixosModules.catppuccin
     inputs.nixos-secrets.nixosModules.networkingProfiles
     inputs.nixos-secrets.nixosModules.ssh
+    inputs.nixos-secrets.nixosModules.homeSecrets
     outputs.nixosModules.bluetooth
     outputs.nixosModules.bootLoader
     outputs.nixosModules.displayManager
@@ -96,6 +97,9 @@
       inherit inputs outputs;
       themeParams = config.theme;
     };
+    sharedModules = [
+      inputs.sops-nix.homeManagerModules.sops
+    ];
     users = {
       # Import your home-manager configuration
       eaterr = import ../../home-manager/home.nix;

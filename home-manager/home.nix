@@ -11,6 +11,7 @@
   # You can import other home-manager modules here
   imports = [
     ./common/base.nix
+    inputs.nixos-secrets.homeManagerModules.mail
     # If you want to use modules your own flake exports (from modules/home-manager):
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.themeGUI

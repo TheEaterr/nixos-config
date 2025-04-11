@@ -36,9 +36,9 @@
   programs.home-manager.enable = true;
   programs.lsd.enable = true;
   programs.git.enable = true;
-  programs.git.extraConfig = {
-    user.name = "Paul Breuil";
-    user.email = "tykapl.breuil@gmail.com";
+  programs.git = {
+    userName = "Paul Breuil";
+    userEmail = "tykapl.breuil@gmail.com";
   };
 
   home.packages = with pkgs; [
