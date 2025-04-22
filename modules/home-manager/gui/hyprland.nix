@@ -190,6 +190,8 @@ in {
     # Scrachpads
     bind = $mainMod CTRL, T, exec, pypr toggle term
     windowrulev2 = opacity 0.7 0.7 0.7,class:(kitty-dropterm)
+    bind = $mainMod CTRL, M, exec, pypr toggle thunderbird
+    windowrulev2 = float,class:(thunderbird-drop)
 
     bind = $mainMod, T, exec, kitty
     # bind = $mainMod CTRL, E, exec, pypr expose
