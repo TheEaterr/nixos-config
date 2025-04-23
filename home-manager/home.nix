@@ -30,6 +30,7 @@
     outputs.homeManagerModules.micro
     outputs.homeManagerModules.fish
     outputs.homeManagerModules.hyprlandFishApps
+    outputs.homeManagerModules.nextcloud
   ];
 
   config.scheme = themeParams.schemes.${themeParams.variant};

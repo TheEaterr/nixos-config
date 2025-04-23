@@ -20,4 +20,5 @@
   hyprpaper = import ./gui/hyprpaper.nix;
   pyprland = import ./gui/pyprland.nix;
   hyprlandFishApps = import ./gui/hyprland-fish-apps.nix;
+  nextcloud = import ./gui/nextcloud.nix;
 }

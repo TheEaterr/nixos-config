@@ -1,5 +1,8 @@
-{ pkgs, lib, ... }: {
-
+{
+  pkgs,
+  lib,
+  ...
+}: {
   environment.systemPackages = [
     # For debugging and troubleshooting Secure Boot.
     # Using unstable as the version in nixpkgs still uses the old

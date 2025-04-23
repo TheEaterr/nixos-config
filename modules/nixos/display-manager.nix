@@ -7,7 +7,7 @@
   # This config was stolen from this guy:
   # https://discourse.nixos.org/t/automatically-unlocking-the-gnome-keyring-using-luks-key-with-greetd-and-hyprland/54260/3
   services.xserver.desktopManager.gnome.enable = false;
-  services.xserver.excludePackages = [ pkgs.xterm ]; 
+  services.xserver.excludePackages = [pkgs.xterm];
   services.gnome.core-utilities.enable = false;
   services.gnome.rygel.enable = false;
   services.xserver.displayManager.gdm.enable = true;

@@ -22,25 +22,27 @@
     systemd
   ]);
   # Darwin requires a different library path prefix
-  wrapPrefix = if (!pkgs.stdenv.isDarwin) then "LD_LIBRARY_PATH" else "DYLD_LIBRARY_PATH";
-  patchedpython = (pkgs.symlinkJoin {
+  wrapPrefix =
+    if (!pkgs.stdenv.isDarwin)
+    then "LD_LIBRARY_PATH"
+    else "DYLD_LIBRARY_PATH";
+  patchedpython = pkgs.symlinkJoin {
     name = "python";
-    paths = [ pkgs.python311 ];
-    buildInputs = [ pkgs.makeWrapper ];
+    paths = [pkgs.python311];
+    buildInputs = [pkgs.makeWrapper];
     postBuild = ''
       wrapProgram "$out/bin/python3.11" --prefix ${wrapPrefix} : "${pythonldlibpath}"
     '';
-  });
-  patchedpoetry = (pkgs.symlinkJoin {
+  };
+  patchedpoetry = pkgs.symlinkJoin {
     name = "poetry";
-    paths = [ pkgs.poetry ];
-    buildInputs = [ pkgs.makeWrapper ];
+    paths = [pkgs.poetry];
+    buildInputs = [pkgs.makeWrapper];
     postBuild = ''
       wrapProgram "$out/bin/poetry" --prefix ${wrapPrefix} : "${pythonldlibpath}"
     '';
-  });
-in
-{
+  };
+in {
   environment.systemPackages = with pkgs; [
     patchedpython
     patchedpoetry

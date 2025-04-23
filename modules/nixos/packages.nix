@@ -37,7 +37,6 @@
     signal-desktop
     whatsapp-for-linux
     telegram-desktop
-    nextcloud-client
     lsd
     wireshark-qt
     krita
