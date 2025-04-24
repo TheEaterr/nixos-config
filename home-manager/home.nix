@@ -19,6 +19,7 @@
     outputs.homeManagerModules.hyprland
     outputs.homeManagerModules.rofi
     outputs.homeManagerModules.dunst
+    outputs.homeManagerModules.direnv
     outputs.homeManagerModules.wlogout
     outputs.homeManagerModules.avizo
     outputs.homeManagerModules.kitty

@@ -11,6 +11,7 @@
   hyprland = import ./gui/hyprland.nix;
   rofi = import ./gui/rofi.nix;
   dunst = import ./gui/dunst.nix;
+  direnv = import ./gui/direnv.nix;
   wlogout = import ./gui/wlogout.nix;
   avizo = import ./gui/avizo.nix;
   kitty = import ./gui/kitty.nix;
