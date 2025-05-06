@@ -2,6 +2,7 @@
   config,
   inputs,
   themeParams,
+  pkgs,
   ...
 }: {
   services.avizo.enable = true;
@@ -12,6 +13,11 @@
       bar-fg-color = "#${config.hexAccent}";
       border-width = 0;
       time = 0.5;
+    };
+  };
+  systemd.user.services.avizo = {
+    Unit = {
+      After = pkgs.lib.mkForce "graphical-session.target"; 
     };
   };
 }

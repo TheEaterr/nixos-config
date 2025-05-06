@@ -1,6 +1,7 @@
 {
   config,
   inputs,
+  pkgs,
   ...
 }: {
   services.hypridle.enable = true;
@@ -35,5 +36,10 @@
         on-timeout = "systemctl suspend"; # suspend pc
       }
     ];
+  };
+  systemd.user.services.hypridle = {
+    Unit = {
+      After = pkgs.lib.mkForce "graphical-session.target"; 
+    };
   };
 }
