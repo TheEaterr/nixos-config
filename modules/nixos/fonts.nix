@@ -30,7 +30,11 @@ in {
   fonts.packages = with pkgs; [
     jetbrains-mono
     nerd-font-patcher
-    nerdfonts
+    nerd-fonts._0xproto
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.symbols-only
+    nerd-fonts.sauce-code-pro
+    nerd-fonts.noto
     tw-cen-regular
   ];
 }
