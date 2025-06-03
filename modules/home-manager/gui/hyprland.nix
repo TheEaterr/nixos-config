@@ -146,10 +146,10 @@ in {
     layerrule=noanim,selection
 
     # Example windowrule v1
-    windowrule = opacity 0.7 0.7 0.7, ^(kitty)$
-    windowrule = opacity 0.85 0.85 0.85, ^(code)$
-    windowrule = float, imv
-    windowrule = center 1, swappy
+    windowrulev2 = opacity 0.7 0.7 0.7,class:^(kitty)$
+    windowrulev2 = opacity 0.7 0.7 0.7,class:^(code)$
+    windowrulev2 = float, class:^(imv)$
+    windowrulev2 = center 1, class:^(swappy)$
 
     # don't idle when watching fullscreen videos
     windowrulev2 = idleinhibit fullscreen, fullscreen:1
