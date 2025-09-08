@@ -67,5 +67,6 @@
     teams-for-linux
     yarn
     go
+    cockatrice
   ];
 }
