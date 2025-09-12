@@ -50,22 +50,15 @@
     onlyoffice-bin_latest
     discord
     vlc
-    godot_4
     sops
     age
     gcc
-    slack
-    openvpn
-    dotenv-cli
     jdk21
     maven
-    clickhouse
     vscode
     protonvpn-gui
     gnumake
     sqlite
-    teams-for-linux
-    yarn
     go
     cockatrice
   ];
