@@ -61,5 +61,6 @@
     sqlite
     go
     cockatrice
+    teams-for-linux
   ];
 }
