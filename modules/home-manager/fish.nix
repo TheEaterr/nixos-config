@@ -7,6 +7,10 @@
   # So fish is used in nix shell and similar
   programs.fish.interactiveShellInit = ''
     ${pkgs.nix-your-shell}/bin/nix-your-shell fish | source
+    
+    # Add micromamba shell hooks to fish
+    eval "$(micromamba shell hook --shell fish)"
+
     # Save the current fish_prompt function as the function _custom_old_fish_prompt.
       functions -c fish_prompt _custom_old_fish_prompt
 

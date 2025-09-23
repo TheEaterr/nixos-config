@@ -62,5 +62,6 @@
     go
     cockatrice
     teams-for-linux
+    micromamba
   ];
 }
