@@ -63,5 +63,6 @@
     cockatrice
     teams-for-linux
     micromamba
+    mosek
   ];
 }
