@@ -64,5 +64,6 @@
     teams-for-linux
     micromamba
     mosek
+    prismlauncher
   ];
 }
