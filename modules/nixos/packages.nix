@@ -19,7 +19,7 @@
     wtype
     wlrctl
     waybar
-    rofi-wayland
+    rofi
     dunst
     wlogout
     git
@@ -35,7 +35,7 @@
     vim
     unzip
     signal-desktop
-    whatsapp-for-linux
+    wasistlos
     telegram-desktop
     lsd
     wireshark-qt
@@ -47,7 +47,7 @@
     obs-studio
     libreoffice
     drawio
-    onlyoffice-bin_latest
+    onlyoffice-desktopeditors
     discord
     vlc
     sops
@@ -62,8 +62,6 @@
     go
     cockatrice
     teams-for-linux
-    micromamba
-    mosek
     prismlauncher
     ansible
   ];

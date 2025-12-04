@@ -6,11 +6,11 @@
   # Using GDM as the display manager allows to unlock gnome-keyring with LUKS passphrase !
   # This config was stolen from this guy:
   # https://discourse.nixos.org/t/automatically-unlocking-the-gnome-keyring-using-luks-key-with-greetd-and-hyprland/54260/3
-  services.xserver.desktopManager.gnome.enable = false;
+  services.desktopManager.gnome.enable = false;
   services.xserver.excludePackages = [pkgs.xterm];
   services.gnome.core-apps.enable = false;
   services.gnome.rygel.enable = false;
-  services.xserver.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = true;
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "eaterr";
 
