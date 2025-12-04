@@ -65,5 +65,6 @@
     micromamba
     mosek
     prismlauncher
+    ansible
   ];
 }
