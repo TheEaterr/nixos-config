@@ -64,5 +64,7 @@
     teams-for-linux
     prismlauncher
     ansible
+    terraform
+    atop
   ];
 }
