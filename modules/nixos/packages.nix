@@ -66,5 +66,6 @@
     ansible
     terraform
     atop
+    zotero
   ];
 }
