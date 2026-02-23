@@ -37,7 +37,7 @@
 
     config.home.packages = with pkgs; [
       # note the hiPrio which makes this script more important then others and is usually used in nix to resolve name conflicts
-      (hiPrio (writeShellApplication {
+      (lib.hiPrio (writeShellApplication {
         name = "toggle-theme";
         runtimeInputs = with pkgs; [home-manager coreutils ripgrep];
         # the interesting part about the script below is that we go back two generations
