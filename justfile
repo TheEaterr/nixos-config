@@ -14,10 +14,16 @@ switch-light:
 
 # Switch to home-manager configs
 user-switch:
-    home-manager switch -b backup --flake .#(echo $USER)
+    home-manager switch -b backup --flake .#$USER
+
+user-switch-light:
+    home-manager switch --specialisation alternate -b backup --flake .#$USER
 
 rootless-switch:
-    home-manager switch -b backup --flake .#(echo $USER)_rootless
+    home-manager switch -b backup --flake .#$USER_rootless
+
+rootless-switch-light:
+    home-manager switch --specialisation alternate -b backup --flake .#$USER_rootless
 
 # Update the boot menu
 boot:
