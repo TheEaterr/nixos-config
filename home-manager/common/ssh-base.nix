@@ -14,6 +14,7 @@
     outputs.homeManagerModules.theme
     outputs.homeManagerModules.micro
     outputs.homeManagerModules.fish
+    outputs.homeManagerModules.direnv
   ];
 
   nix = let
