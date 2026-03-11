@@ -27,8 +27,8 @@ in {
     # See https://wiki.hyprland.org/Configuring/Monitors/
     monitor=eDP-1,2256x1504,0x1080,1.333333
     monitor = DP-2, preferred, -1440x-1080, 1, transform, 3
-    monitor = DP-3, preferred, -1440x0, 1, transform, 1
-    monitor = DP-4, 1920x1080, 0x0, 1
+    monitor = desc:Dell Inc. DELL U2715H 6VY7R7BG045S, preferred, -1440x0, 1, transform, 1
+    monitor = desc:Dell Inc. DELL P2422H BDMV7N3, 1920x1080, 0x0, 1
     monitor=,preferred,auto,1
 
 
