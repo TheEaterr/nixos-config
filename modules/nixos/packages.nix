@@ -67,5 +67,6 @@
     terraform
     atop
     zotero
+    gdu
   ];
 }
