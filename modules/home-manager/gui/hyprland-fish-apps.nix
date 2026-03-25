@@ -36,7 +36,7 @@
       end
     '';
 
-    autostart = "pypr & waybar & poweralertd & wl-paste --type text --watch cliphist store & wl-paste --type image --watch cliphist store & wl-clip-persist --clipboard regular & systemctl --user start psi-notify";
+    autostart = "pypr & poweralertd & wl-paste --type text --watch cliphist store & wl-paste --type image --watch cliphist store & wl-clip-persist --clipboard regular & systemctl --user start psi-notify";
 
     bookmark_add = ''
       if [ -z $(wl-paste) ]
