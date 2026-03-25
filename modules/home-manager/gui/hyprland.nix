@@ -31,6 +31,10 @@ in {
     monitor = desc:Dell Inc. DELL P2422H BDMV7N3, 1920x1080, 0x0, 1
     monitor=,preferred,auto,1
 
+    # fix bug where the hyprland waybar module stop working
+    # see https://github.com/Alexays/Waybar/issues/4451
+    exec=pkill waybar; sleep 1; waybar &
+
 
     # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
