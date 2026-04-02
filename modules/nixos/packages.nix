@@ -68,5 +68,6 @@
     atop
     zotero
     gdu
+    graphviz
   ];
 }
