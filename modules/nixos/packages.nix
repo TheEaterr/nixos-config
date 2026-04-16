@@ -69,5 +69,6 @@
     zotero
     gdu
     graphviz
+    solc
   ];
 }
