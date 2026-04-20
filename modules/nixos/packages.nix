@@ -70,5 +70,6 @@
     gdu
     graphviz
     solc
+    gopls
   ];
 }
