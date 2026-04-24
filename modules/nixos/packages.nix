@@ -71,5 +71,6 @@
     graphviz
     solc
     gopls
+    flamegraph
   ];
 }
