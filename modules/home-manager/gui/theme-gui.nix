@@ -26,6 +26,7 @@
   gtk = {
     enable = true;
   };
+  gtk.gtk4.theme = config.gtk.theme;
   catppuccin.gtk.icon.enable = true;
   catppuccin.gtk.enable = true;
 

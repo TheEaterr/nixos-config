@@ -10,7 +10,6 @@
   services.dbus.enable = true;
   services.tumbler.enable = true;
   services.fwupd.enable = true;
-  programs.light.enable = true;
   services.geoclue2.enable = true;
   programs.thunar.enable = true;
 

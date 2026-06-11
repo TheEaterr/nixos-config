@@ -15,6 +15,7 @@
     };
 in {
   wayland.windowManager.hyprland.enable = true;
+  wayland.windowManager.hyprland.configType = "hyprlang";
 
   wayland.windowManager.hyprland.extraConfig = ''
     #
@@ -82,7 +83,7 @@ in {
         gaps_in = 2.5
         gaps_out = 5
         border_size = 2
-        col.active_border = rgb(${config.hexAccent})
+        col.active_border = rgb(fe640b)
 
         layout = dwindle
     }
@@ -115,7 +116,6 @@ in {
 
     dwindle {
         # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
-        pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = yes
     }
 
@@ -124,7 +124,7 @@ in {
     misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = 0x${config.scheme.base01}
+        background_color = 0xe6e9ef
         initial_workspace_tracking = 0
         enable_swallow = true
         swallow_regex = ^(kitty)$
@@ -145,16 +145,46 @@ in {
     # }
 
     # Remove fade out animation when screenshotting using slurp
-    layerrule=noanim,selection
+    layerrule {
+    name = layerrule-1
+    no_anim = on
+    match:namespace = selection
+    }
+
 
     # Example windowrule v1
-    windowrulev2 = opacity 0.7 0.7 0.7,class:^(kitty)$
-    windowrulev2 = opacity 0.7 0.7 0.7,class:^(code)$
-    windowrulev2 = float, class:^(imv)$
-    windowrulev2 = center 1, class:^(swappy)$
+    windowrule {
+    name = windowrule-1
+    opacity = 0.7 0.7 0.7
+    match:class = ^(kitty)$
+    }
+
+    windowrule {
+    name = windowrule-2
+    opacity = 0.7 0.7 0.7
+    match:class = ^(code)$
+    }
+
+    windowrule {
+    name = windowrule-3
+    float = on
+    match:class = ^(imv)$
+    }
+
+    windowrule {
+    name = windowrule-4
+    center = 1
+    match:class = ^(swappy)$
+    }
+
 
     # don't idle when watching fullscreen videos
-    windowrulev2 = idleinhibit fullscreen, fullscreen:1
+    windowrule {
+    name = windowrule-5
+    idle_inhibit = fullscreen
+    match:fullscreen = 1
+    }
+
     # Example windowrule v2
     # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
     # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
@@ -190,9 +220,19 @@ in {
 
     # Scrachpads
     bind = $mainMod CTRL, T, exec, pypr toggle term
-    windowrulev2 = opacity 0.7 0.7 0.7,class:(kitty-dropterm)
+    windowrule {
+    name = windowrule-6
+    opacity = 0.7 0.7 0.7
+    match:class = (kitty-dropterm)
+    }
+
     bind = $mainMod CTRL, M, exec, pypr toggle thunderbird
-    windowrulev2 = float,class:(thunderbird-drop)
+    windowrule {
+    name = windowrule-7
+    float = on
+    match:class = (thunderbird-drop)
+    }
+
 
     bind = $mainMod, T, exec, kitty
     # bind = $mainMod CTRL, E, exec, pypr expose
@@ -221,7 +261,7 @@ in {
     bind = $mainMod SHIFT, F, togglefloating,
     bind = $mainMod CTRL, F, fullscreen, 0
     bind = $mainMod , P, exec, wlrlui
-    bind = $mainMod SHIFT, O, togglesplit, # dwindle
+    bind = $mainMod SHIFT, O, layoutmsg, togglesplit, # dwindle
     bind = $mainMod ALT, M, exit,
     bind = $mainMod, N, exec, toggle-theme-gui
     bind = $mainMod, I, exec, fish -c cycle_power_profile
@@ -235,15 +275,15 @@ in {
     bind = , XF86AudioNext, exec, playerctl next
     bind = , XF86AudioPrev, exec, playerctl previous
 
-    binde = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
-    binde = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
-    bind = , XF86AudioMute, exec, volumectl ${avizoFlag} toggle-mute
-    bind = , XF86AudioMicMute, exec, volumectl ${avizoFlag} -m toggle-mute
+    binde = , XF86AudioRaiseVolume, exec, volumectl  -u up
+    binde = , XF86AudioLowerVolume, exec, volumectl  -u down
+    bind = , XF86AudioMute, exec, volumectl  toggle-mute
+    bind = , XF86AudioMicMute, exec, volumectl  -m toggle-mute
 
-    # Change and save brightness setting, ${avizoFlag} toggles
+    # Change and save brightness setting,  toggles
     # dark mode icons
-    binde = , XF86MonBrightnessUp, exec, lightctl ${avizoFlag} up && light -O
-    binde = , XF86MonBrightnessDown, exec, lightctl ${avizoFlag} down && light -O
+    binde = , XF86MonBrightnessUp, exec, lightctl  up && light -O
+    binde = , XF86MonBrightnessDown, exec, lightctl  down && light -O
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, h, movefocus, l

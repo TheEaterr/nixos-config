@@ -2,6 +2,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
+    brightnessctl
     psi-notify
     poweralertd
     playerctl
@@ -35,10 +36,10 @@
     vim
     unzip
     signal-desktop
-    wasistlos
+    karere
     telegram-desktop
     lsd
-    wireshark-qt
+    wireshark
     krita
     zoom-us
     nodejs
@@ -56,7 +57,7 @@
     jdk21
     maven
     vscode
-    protonvpn-gui
+    proton-vpn
     gnumake
     sqlite
     go
@@ -72,5 +73,6 @@
     solc
     gopls
     flamegraph
+    melonds
   ];
 }
