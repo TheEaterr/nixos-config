@@ -23,6 +23,8 @@
     .${config.scheme.variant};
   config.catppuccin.accent = themeParams.${config.scheme.variant}.accent;
   config.catppuccin.flavor = themeParams.${config.scheme.variant}.flavor;
+  config.catppuccin.autoEnable = true;
+  config.catppuccin.enable = true;
 
   config.home.file.".config/current_theme".text = "${config.scheme.variant}";
 
@@ -30,11 +32,4 @@
   config.catppuccin.btop.enable = true;
   config.programs.zellij.enable = true;
   config.catppuccin.zellij.enable = true;
-  config.home.file.".config/lsd/config.yaml".text = ''
-    color:
-      theme: custom
-  '';
-  config.home.file.".config/lsd/colors.yaml".text = builtins.readFile (config.scheme {
-    templateRepo = inputs.base16-lsd;
-  });
 }

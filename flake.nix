@@ -31,7 +31,7 @@
     # Theming
     base16.url = "github:SenchoPens/base16.nix";
     catppuccin = {
-      url = "github:catppuccin/nix?rev=9474347c69e93e392f194dda7a57c641ba4b998e";
+      url = "github:catppuccin/nix";
     };
     tt-schemes = {
       url = "github:tinted-theming/schemes";

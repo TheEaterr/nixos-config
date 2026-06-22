@@ -6,7 +6,8 @@
 }: {
   catppuccin.accent = config.theme.${config.theme.variant}.accent;
   catppuccin.flavor = config.theme.${config.theme.variant}.flavor;
-
+  catppuccin.autoEnable = true;
+  catppuccin.enable = true;
   catppuccin.tty.enable = true;
 
   specialisation.light.configuration = {
