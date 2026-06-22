@@ -57,6 +57,7 @@
 
   catppuccin.cursors.enable = true;
   catppuccin.hyprland.enable = false;
+  catppuccin.hyprlock.enable = false;
   home.pointerCursor.gtk.enable = true;
   home.pointerCursor.size = 32;
 }

@@ -34,7 +34,7 @@ in {
 
     # fix bug where the hyprland waybar module stop working
     # see https://github.com/Alexays/Waybar/issues/4451
-    # exec=pkill waybar; sleep 1; waybar &
+    exec=pkill waybar; sleep 1; waybar &
 
 
     # See https://wiki.hyprland.org/Configuring/Keywords/ for more
