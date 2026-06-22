@@ -83,7 +83,7 @@ in {
         gaps_in = 2.5
         gaps_out = 5
         border_size = 2
-        col.active_border = rgb(fe640b)
+        col.active_border = rgb(${config.hexAccent})
 
         layout = dwindle
     }
@@ -124,7 +124,7 @@ in {
     misc {
         disable_hyprland_logo = true
         disable_splash_rendering = true
-        background_color = 0xe6e9ef
+        background_color = 0x${config.scheme.base01}
         initial_workspace_tracking = 0
         enable_swallow = true
         swallow_regex = ^(kitty)$
@@ -230,7 +230,7 @@ in {
     windowrule {
     name = windowrule-7
     float = on
-    match:class = (thunderbird-drop)
+    match:class = (thunderbird)
     }
 
 
@@ -275,15 +275,15 @@ in {
     bind = , XF86AudioNext, exec, playerctl next
     bind = , XF86AudioPrev, exec, playerctl previous
 
-    binde = , XF86AudioRaiseVolume, exec, volumectl  -u up
-    binde = , XF86AudioLowerVolume, exec, volumectl  -u down
-    bind = , XF86AudioMute, exec, volumectl  toggle-mute
-    bind = , XF86AudioMicMute, exec, volumectl  -m toggle-mute
+    binde = , XF86AudioRaiseVolume, exec, volumectl ${avizoFlag} -u up
+    binde = , XF86AudioLowerVolume, exec, volumectl ${avizoFlag} -u down
+    bind = , XF86AudioMute, exec, volumectl ${avizoFlag} toggle-mute
+    bind = , XF86AudioMicMute, exec, volumectl ${avizoFlag} -m toggle-mute
 
-    # Change and save brightness setting,  toggles
+    # Change and save brightness setting, ${avizoFlag} toggles
     # dark mode icons
-    binde = , XF86MonBrightnessUp, exec, lightctl  up && light -O
-    binde = , XF86MonBrightnessDown, exec, lightctl  down && light -O
+    binde = , XF86MonBrightnessUp, exec, lightctl ${avizoFlag} up && light -O
+    binde = , XF86MonBrightnessDown, exec, lightctl ${avizoFlag} down && light -O
 
     # Move focus with mainMod + arrow keys
     bind = $mainMod, h, movefocus, l

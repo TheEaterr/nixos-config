@@ -14,8 +14,9 @@
 
     [scratchpads.thunderbird]
     animation = "fromBottom"
-    command = "thunderbird --class thunderbird-drop"
-    class = "thunderbird-drop"
+    command = "thunderbird"
+    class = "thunderbird"
     size = "90% 90%"
+    lazy = false
   '';
 }
