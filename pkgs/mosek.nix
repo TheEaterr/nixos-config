@@ -1,10 +1,9 @@
-
-
- { stdenv, lib
-, fetchurl
-, autoPatchelfHook
+{
+  stdenv,
+  lib,
+  fetchurl,
+  autoPatchelfHook,
 }:
-
 stdenv.mkDerivation rec {
   pname = "mosek";
   version = "11.0.28";

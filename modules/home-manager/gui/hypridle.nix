@@ -39,7 +39,7 @@
   };
   systemd.user.services.hypridle = {
     Unit = {
-      After = pkgs.lib.mkForce "graphical-session.target"; 
+      After = pkgs.lib.mkForce "graphical-session.target";
     };
   };
 }

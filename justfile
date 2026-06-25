@@ -45,4 +45,4 @@ update:
     nix flake update
 
 format:
-    nix fmt
+    nix fmt .

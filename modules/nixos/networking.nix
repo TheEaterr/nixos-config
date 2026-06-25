@@ -2,9 +2,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
   networking.networkmanager.plugins = with pkgs; [
-      networkmanager-openvpn
-      networkmanager-openconnect
-    ];
+    networkmanager-openvpn
+    networkmanager-openconnect
+  ];
   # For wireguard
   networking.firewall = {
     #  # if packets are still dropped, they will show up in dmesg

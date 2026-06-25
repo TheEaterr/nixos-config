@@ -23,22 +23,23 @@
   catppuccin.kvantum.apply = true;
   catppuccin.kvantum.enable = true;
 
-  gtk = let 
+  gtk = let
     capitalizeFirst = str:
-      if str == "" then ""
+      if str == ""
+      then ""
       else (lib.toUpper (builtins.substring 0 1 str)) + (builtins.substring 1 (builtins.stringLength str) str);
     variantCapitalized = capitalizeFirst "${config.scheme.variant}";
     accentCapitalized = capitalizeFirst "${themeParams.${config.scheme.variant}.accent}";
   in {
     enable = true;
-    theme.package = (pkgs.magnetic-catppuccin-gtk.override {
+    theme.package = pkgs.magnetic-catppuccin-gtk.override {
       shade = "${config.scheme.variant}";
-      accent = [ "${themeParams.${config.scheme.variant}.accent}" ];
-    });
+      accent = ["${themeParams.${config.scheme.variant}.accent}"];
+    };
     theme.name = "Catppuccin-GTK-${accentCapitalized}-${variantCapitalized}";
     gtk4.theme = config.gtk.theme;
   };
-  
+
   catppuccin.gtk.icon.enable = true;
 
   dconf = {
@@ -50,7 +51,9 @@
             dark = "prefer-dark";
             light = "";
           }
-          .${config.scheme.variant};
+          .${
+            config.scheme.variant
+          };
       };
     };
   };

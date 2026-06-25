@@ -20,7 +20,9 @@
       light = config.scheme.${themeParams.light.base16Accent};
       dark = config.scheme.${themeParams.dark.base16Accent};
     }
-    .${config.scheme.variant};
+    .${
+      config.scheme.variant
+    };
   config.catppuccin.accent = themeParams.${config.scheme.variant}.accent;
   config.catppuccin.flavor = themeParams.${config.scheme.variant}.flavor;
   config.catppuccin.autoEnable = true;

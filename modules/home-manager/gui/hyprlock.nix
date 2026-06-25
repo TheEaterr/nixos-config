@@ -82,7 +82,7 @@
         dots_center = false
         dots_rounding = -1 # -1 default circle, -2 follow input-field rounding
         inner_color = rgba(${config.scheme.base01-rgb-r}, ${config.scheme.base01-rgb-g}, ${config.scheme.base01-rgb-b}, 1.0)
-        outer_color = rgba(0, 0, 0, 0) 
+        outer_color = rgba(0, 0, 0, 0)
 
         fade_on_empty = false
         fade_timeout = 1000 # Milliseconds before fade_on_empty is triggered.

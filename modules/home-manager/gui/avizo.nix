@@ -17,7 +17,7 @@
   };
   systemd.user.services.avizo = {
     Unit = {
-      After = pkgs.lib.mkForce "graphical-session.target"; 
+      After = pkgs.lib.mkForce "graphical-session.target";
     };
   };
 }

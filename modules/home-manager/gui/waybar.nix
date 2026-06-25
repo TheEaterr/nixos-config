@@ -155,7 +155,9 @@
             light = "echo '{ \"text\":\"\", \"tooltip\": \"Toggle theme\" }'";
             dark = "echo '{ \"text\":\"\", \"tooltip\": \"Toggle theme\" }'";
           }
-          .${config.scheme.variant};
+          .${
+            config.scheme.variant
+          };
         interval = "once";
         on-click = "toggle-theme-gui";
       };
