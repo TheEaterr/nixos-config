@@ -45,6 +45,7 @@
   '';
 
   programs.bash = {
+    enable = true;
     initExtra = ''
       if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
       then
