@@ -40,6 +40,8 @@
       if [ $LC_THEME != (cat ~/.config/current_theme) ]
         echo "Setting theme to $LC_THEME"
         toggle-theme
+        # Reload fish to apply the new theme
+        exec fish
       end
     end
   '';
