@@ -74,5 +74,6 @@
     gopls
     flamegraph
     melonds
+    perf
   ];
 }
