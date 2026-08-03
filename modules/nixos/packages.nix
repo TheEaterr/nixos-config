@@ -1,5 +1,10 @@
 {pkgs, ...}: {
   programs.firefox.enable = true;
+  # workaround to fix fount issue in firefox and thunderbird
+  environment.sessionVariables.XDG_DATA_DIRS = [
+		"${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+		"${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
+	];
 
   environment.systemPackages = with pkgs; [
     brightnessctl
@@ -36,7 +41,7 @@
     vim
     unzip
     signal-desktop
-    karere
+    unstable.karere
     telegram-desktop
     lsd
     wireshark
