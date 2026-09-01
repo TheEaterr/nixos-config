@@ -261,7 +261,7 @@ in {
     bind = $mainMod SHIFT, F, togglefloating,
     bind = $mainMod CTRL, F, fullscreen, 0
     bind = $mainMod , P, exec, wlrlui
-    bind = $mainMod SHIFT, O, layoutmsg, togglesplit, # dwindle
+    bind = $mainMod SHIFT, O, layoutmsg, togglesplit # dwindle
     bind = $mainMod ALT, M, exit,
     bind = $mainMod, N, exec, toggle-theme-gui
     bind = $mainMod, I, exec, fish -c cycle_power_profile
