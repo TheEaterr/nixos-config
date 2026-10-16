@@ -80,5 +80,6 @@
     flamegraph
     melonds
     perf
+    claude-code
   ];
 }
