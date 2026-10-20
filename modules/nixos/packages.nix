@@ -40,7 +40,7 @@
     btop
     vim
     unzip
-    signal-desktop
+    unstable.signal-desktop
     unstable.karere
     telegram-desktop
     lsd

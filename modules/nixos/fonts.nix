@@ -21,6 +21,12 @@
       runHook postInstall
     '';
   };
+  mytex =
+    pkgs.texliveConTeXt.withPackages
+      (ps: with ps; [ 
+        fandol
+        libertinus-fonts
+      ]);
 in {
   # FIXME: for flatpak, shoudl probably use some smart bindfs or something
   # also i set xdg data dirs manually in .profile, shoudl be in home manager
@@ -36,5 +42,5 @@ in {
     nerd-fonts.sauce-code-pro
     nerd-fonts.noto
     tw-cen-regular
-  ];
+  ] ++ [ mytex.fonts ];
 }
