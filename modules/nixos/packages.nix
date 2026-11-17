@@ -81,5 +81,6 @@
     melonds
     perf
     claude-code
+    unstable.mistral-vibe
   ];
 }
